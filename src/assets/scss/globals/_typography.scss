@@ -1,0 +1,23 @@
+@use "../utils" as u;
+
+html {
+  font-size: 14px;
+}
+
+@include u.breakpoint-screen-max(fold-screen) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@include u.breakpoint-screen-min(tablet-screen) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@include u.breakpoint-screen-min(laptop-screen) {
+  html {
+    font-size: 14px;
+  }
+}

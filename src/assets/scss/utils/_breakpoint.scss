@@ -1,0 +1,50 @@
+// for my typograph font sizes
+
+$breakpoint-html-fs-max: (
+  "fold-screen": 299px,
+);
+
+@mixin breakpoint-screen-max($size) {
+  @media (max-width: map-get($breakpoint-html-fs-max, $size)) {
+    @content;
+  }
+}
+
+$breakpoint-html-fs-min: (
+  "tablet-screen": 559px,
+  "laptop-screen": 710px,
+);
+
+@mixin breakpoint-screen-min($size) {
+  @media (min-width: map-get($breakpoint-html-fs-min, $size)) {
+    @content;
+  }
+}
+
+// For my breakpoint going up to laptop view
+
+$breakpoints-up: (
+  "700": 700px,
+  "900": 900px,
+  "large-10": 980px,
+  "1200": 1200px,
+);
+
+@mixin breakpoint-up($size) {
+  @media (min-width: map-get($breakpoints-up, $size)) {
+    @content;
+  }
+}
+
+// For my breakpoint going down to mobile veiw
+
+$breakpoint-down: (
+  "500": 500px,
+  "mobile-nav": 750px,
+);
+
+@mixin breakpoint($size) {
+  @media (max-width: map-get($breakpoint-down, $size)) {
+    @content;
+  }
+}

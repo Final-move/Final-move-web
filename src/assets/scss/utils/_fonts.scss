@@ -1,0 +1,35 @@
+@font-face {
+  font-family: montserrat;
+  src: url("/src/assets/fonts/montserrat/Montserrat-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: opensans;
+  src: url("/src/assets/fonts/opensans/OpenSans-VariableFont_wdth\,wght.ttf");
+}
+
+//font-family styling
+$ff-primary: opensans;
+$ff-header: montserrat;
+
+$ff-body: $ff-primary;
+$ff-head: $ff-header;
+
+// font-sizes
+$fs-100: 1rem;
+$fs-200: 1.2rem;
+$fs-300: 1.5rem;
+$fs-400: 1.8rem;
+$fs-500: 2rem;
+$fs-600: 2.5rem;
+$fs-700: 3rem;
+$fs-800: 3.5rem;
+$fs-900: 4rem;
+
+// font-weights
+$fw-400: 400;
+$fw-500: 500;
+$fw-600: 600;
+$fw-700: 700;
+$fw-800: 800;
+$fw-900: 900;
