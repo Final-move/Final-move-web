@@ -1,16 +1,12 @@
 :root {
-  --primary-clr-100: rgba(255, 255, 255, 1);
-  --primary-clr-200: rgb(214, 214, 214);
-  --primary-clr-300: rgb(255, 238, 50);
-  --primary-clr-400: rgb(255, 209, 0);
-  --primary-clr-900: rgba(0, 0, 0, 1);
+  --text-clr-light: rgb(255, 255, 255);
+  --text-clr-dark: rgb(0, 0, 0);
 
-  --secondary-clr-100: rgb(214, 214, 214);
+  --primary-clr-white-100: rgba(255, 255, 255, 1);
 
-  --neutral-clr-100: rgba(0, 0, 0, 0.6);
+  --primary-clr-yellow-100: rgb(255, 217, 0);
 
-  --accent-clr-100: rgb(255, 150, 50);
-  --accent-clr-900: rgb(255, 0, 0);
+  --primary-clr-grey-100: rgb(214, 214, 214);
 
-  --overlay-primary-100: rgba(0, 0, 0, 0.35);
+  --primary-clr-dark-100: rgb(0, 0, 0);
 }

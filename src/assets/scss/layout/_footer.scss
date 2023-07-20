@@ -1,7 +1,7 @@
 @use "../utils/" as u;
 
 .footer {
-  background: var(--primary-clr-900);
+  background: var(--primary-clr-dark-100);
   width: 100%;
   padding: 5em 7% 1em;
   display: flex;
@@ -18,7 +18,7 @@
 
     .logo-container {
       width: 50%;
-      color: var(--primary-clr-100);
+      color: var(--text-clr-light);
       margin-bottom: 0.5em;
 
       p {
@@ -31,7 +31,7 @@
 
     .links-container {
       width: 50%;
-      color: var(--primary-clr-100);
+      color: var(--text-clr-light);
       display: flex;
       justify-content: space-between;
       align-items: baseline;
@@ -62,7 +62,7 @@
             }
 
             a {
-              color: var(--primary-clr-100);
+              color: var(--text-clr-light);
               font-size: 0.9rem;
               font-weight: u.$fw-400;
               display: flex;
@@ -89,7 +89,7 @@
             }
 
             a {
-              color: var(--primary-clr-100);
+              color: var(--text-clr-light);
               font-size: 0.9rem;
               font-weight: u.$fw-400;
             }
@@ -116,7 +116,7 @@
             }
 
             a {
-              color: var(--primary-clr-400);
+              color: var(--primary-clr-yellow-100);
               font-size: u.$fs-300;
               font-weight: u.$fw-700;
             }
@@ -128,23 +128,23 @@
 
   .ending-container {
     width: 100%;
-    border-top: 1px solid var(--primary-clr-200);
+    border-top: 1px solid var(--primary-clr-grey-100);
     padding-top: 1em;
 
     p {
       text-align: center;
       font-size: 0.8rem;
       font-weight: u.$fw-500;
-      color: var(--primary-clr-100);
+      color: var(--text-clr-light);
 
       span {
-        color: var(--primary-clr-400);
+        color: var(--primary-clr-yellow-100);
       }
     }
   }
 }
 
-@include u.breakpoint(mobile-nav) {
+@include u.breakpoint("600") {
   .footer {
     padding-inline: 1em;
     .top-container {

@@ -118,6 +118,8 @@ video {
 // General styling
 
 body {
+  width: 100%;
+  min-height: 100vh;
   font-family: u.$ff-body;
   scroll-behavior: smooth;
   overflow-x: hidden;
