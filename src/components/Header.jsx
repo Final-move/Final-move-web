@@ -25,7 +25,6 @@ const Header = () => {
     const handleScroll = () => {
       if (scrollMainContentRef.current) {
         const currentScrollPos = scrollMainContentRef.current.scrollTop;
-        console.log(currentScrollPos);
 
         if (currentScrollPos < prevScrollPos && currentScrollPos !== 0) {
           setIsFixed(true);
