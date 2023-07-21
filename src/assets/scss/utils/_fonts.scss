@@ -8,9 +8,15 @@
   src: url("/src/assets/fonts/opensans/OpenSans-VariableFont_wdth\,wght.ttf");
 }
 
+@font-face {
+  font-family: londrina;
+  src: url("/src/assets/fonts/londrina/LondrinaShadow-Regular.ttf");
+}
+
 //font-family styling
 $ff-primary: opensans;
-$ff-header: montserrat;
+$ff-secondary: montserrat;
+$ff-header: londrina;
 
 $ff-body: $ff-primary;
 $ff-head: $ff-header;

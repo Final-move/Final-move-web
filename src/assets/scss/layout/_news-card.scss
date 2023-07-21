@@ -4,12 +4,10 @@
   background: var(--primary-clr-white-100);
   position: relative;
   width: 100%;
-  max-width: 320px;
   padding: 0.5em;
-  margin: 0.5em;
-  border: 1px solid #eaeaea;
+  border: 1px solid var(--card-border-clr);
   border-radius: 0.5em;
-  box-shadow: 0 2px 4px var(--primary-clr-dark-900);
+  box-shadow: var(--card-box-shadow);
   overflow: hidden;
 
   svg {
@@ -25,6 +23,7 @@
         flex-flow: column;
         align-items: flex-start;
         .content {
+          order: 1;
           margin-top: 0.5em;
           margin-bottom: 1em;
 
@@ -33,8 +32,7 @@
             color: var(--primary-clr-yellow-100);
             padding: 0.15em 0.4em;
             margin-right: 0.5em;
-            border-top-left-radius: 0.3em;
-            order: 1;
+            border-top-left-radius: 0.35em;
           }
 
           h4 {
@@ -72,18 +70,83 @@
           padding-block: 0.4em;
           width: 100%;
           background: var(--primary-clr-grey-100);
-          color: var(--primary-clr-yellow-100);
+          color: var(--primary-clr-dark-100);
           outline: transparent;
           display: flex;
           align-items: center;
           justify-content: center;
           font-size: 0.9rem;
-          font-weight: u.$fw-500;
+          font-weight: u.$fw-600;
 
           span {
+            color: var(--primary-clr-yellow-100);
             margin-right: 0.3em;
             font-size: u.$fs-300;
             font-weight: u.$fw-700;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include u.breakpoint-up("520") {
+  .post-card {
+    &__link {
+      .post-content {
+        .head {
+          flex-flow: row;
+
+          .content {
+            width: 55%;
+            height: 200px;
+            overflow: hidden;
+
+            order: 2;
+            margin-bottom: 0;
+            margin-left: 1em;
+
+            .exclusive {
+              border-top-left-radius: 0;
+            }
+          }
+
+          .img-container {
+            width: 45%;
+            order: 1;
+            border-top-left-radius: 0.35em;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include u.breakpoint-up("670") {
+  .post-card {
+    width: 310px;
+
+    &__link {
+      .post-content {
+        .head {
+          flex-flow: column;
+
+          .content {
+            width: 100%;
+            height: auto;
+            order: 1;
+            margin-bottom: 1em;
+            margin-left: 0;
+
+            .exclusive {
+              border-top-left-radius: 0.5em;
+            }
+          }
+
+          .img-container {
+            width: 100%;
+            order: 2;
+            border-top-left-radius: 0;
           }
         }
       }

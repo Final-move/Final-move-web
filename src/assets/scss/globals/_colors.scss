@@ -9,5 +9,10 @@
   --primary-clr-grey-100: rgb(214, 214, 214);
 
   --primary-clr-dark-100: rgb(0, 0, 0);
-  --primary-clr-dark-900: rgba(0, 0, 0, 0.1);
+  --primary-clr-dark-900: rgba(0, 0, 0, 0.15);
+
+  --card-border-clr: rgb(234, 234, 234);
+
+  --card-box-shadow: 0 2px 4px var(--primary-clr-dark-900);
+  --header-box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.3);
 }

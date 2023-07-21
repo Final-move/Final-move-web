@@ -24,6 +24,11 @@ $breakpoint-html-fs-min: (
 // For my breakpoint going up to laptop view
 
 $breakpoints-up: (
+  "400": 400px,
+  "500": 500px,
+  "520": 520px,
+  "600": 600px,
+  "670": 670px,
   "700": 700px,
   "900": 900px,
   "large-10": 980px,
@@ -40,7 +45,12 @@ $breakpoints-up: (
 
 $breakpoint-down: (
   "500": 500px,
+  "550": 550px,
   "600": 600px,
+  "650": 650px,
+  "700": 700px,
+  "800": 800px,
+  "850": 850px,
   "mobile-nav": 750px,
 );
 

@@ -4,12 +4,13 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/home/Page";
 import About from "./pages/about/Page";
-import Blog from "./pages/Blog/Page";
+import Blog from "./pages/blog/Page";
 import Resources from "./pages/resources/Page";
 import Contact from "./pages/contact/Page";
 import Search from "./components/Search";
 import Login from "./components/Login";
 import MobileNav from "./components/MobileNav";
+import BlogArticle from "./pages/blog/blog-article/Page";
 
 export const toggleContext = React.createContext();
 
@@ -36,6 +37,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/article/:id" element={<BlogArticle />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/search" element={<Search />} />

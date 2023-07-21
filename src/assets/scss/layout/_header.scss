@@ -12,9 +12,13 @@ header {
   transition: all 700ms ease;
 
   .logo-container {
+    background: var(--primary-clr-dark-100);
+    padding: 0.3em 0.5em;
+
     .logo {
-      color: var(--text-clr-dark);
-      font-size: u.$fs-200;
+      color: var(--primary-clr-yellow-100);
+      font-family: u.$ff-head;
+      font-size: u.$fs-300;
       font-weight: u.$fw-500;
     }
   }
@@ -81,7 +85,7 @@ header {
 .fixed-nav {
   position: fixed;
   top: 0;
-  box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: var(--header-box-shadow);
   transition: all 700ms ease;
 }
 

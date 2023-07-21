@@ -2,14 +2,16 @@ import React from "react";
 import { Link } from "react-router-dom";
 import img from "../assets/media/images/special-teaching.jpg";
 import { FaComments } from "react-icons/fa";
+import Img from "./optimization/Img";
 
 const NewsCard = () => {
   const comment = 3;
   const exclusive = true;
+  const id = 1;
 
   return (
-    <section className="post-card">
-      <Link href="#home" className="post-card__link">
+    <section style={{ paddingBlock: "10em" }} className="post-card">
+      <Link to={`blog/article/${id}`} className="post-card__link">
         <div className="post-content">
           <div className="head">
             <article className="content">
@@ -22,7 +24,7 @@ const NewsCard = () => {
             </article>
 
             <div className="img-container">
-              <img
+              <Img
                 src={img}
                 alt="sign fireman in a green suit holding a microphone"
                 className="img"

@@ -1,0 +1,11 @@
+@use "../utils/" as u;
+
+.page-container {
+  padding-inline: 7%;
+}
+
+@include u.breakpoint(mobile-nav) {
+  .page-container {
+    padding-inline: 1em;
+  }
+}
