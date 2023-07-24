@@ -5,7 +5,11 @@ import { useParams } from "react-router";
 const BlogArticle = () => {
   const article = useParams();
   console.log(article);
-  return <PageContainer>lorem70</PageContainer>;
+  return (
+    <PageContainer style={{ height: "100vh", background: "yellow" }}>
+      lorem70
+    </PageContainer>
+  );
 };
 
 export default BlogArticle;
