@@ -1,0 +1,15 @@
+@use "../utils/" as u;
+
+.homeNews-section {
+  background: var(--primary-clr-white-100);
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  padding-block: 5em;
+  gap: 1em;
+}
+
+@include u.breakpoint("850") {
+  .homeNews-section {
+    grid-template-columns: 5em;
+  }
+}

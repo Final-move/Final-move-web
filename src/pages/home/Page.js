@@ -1,12 +1,12 @@
 import React from "react";
 import Banner from "./Banner";
-import NewsCard from "../../components/NewsCard";
+import HomeNews from "./HomeNews";
 
 const Home = () => {
   return (
     <>
       <Banner />
-      <NewsCard />
+      <HomeNews />
     </>
   );
 };

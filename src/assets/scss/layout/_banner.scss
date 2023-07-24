@@ -5,23 +5,186 @@
   height: 95vh;
   max-height: 550px;
   background: var(--primary-clr-white-100);
+  overflow: hidden;
 
   .container {
+    position: relative;
     height: 100%;
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-auto-rows: 4fr;
-    gap: 0.5em;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1em;
 
     .main-banner {
-      grid-row: 1 / 4;
+      position: relative;
+      grid-row: 1 / span 4;
     }
 
     .aside-banner {
-      grid-row: 1 / 4;
+      grid-row: 1 / span 4;
+
       display: grid;
-      grid-template-rows: repeat(2, 1fr);
-      gap: 0.5em;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      gap: 1em;
+
+      .aside-upcoming {
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 2;
+
+        svg {
+          display: inline-block;
+        }
+
+        .container {
+          width: 100%;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: repeat(3, 1fr);
+
+          .img-container,
+          .content-container {
+            grid-row: 1 / 4;
+          }
+
+          .img-container {
+            grid-column: 1 / 4;
+
+            .img {
+              width: 100%;
+              height: 100%;
+              object-position: center;
+              object-fit: cover;
+            }
+          }
+
+          .content-container {
+            grid-column: 1 / 4;
+            background: var(--card-gradient);
+            z-index: 1;
+            display: flex;
+            flex-flow: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            overflow: hidden;
+
+            .head {
+              margin-block: 0.6em 1em;
+              margin-left: 0.6em;
+
+              .exclusive {
+                align-self: flex-start;
+                background: var(--primary-clr-dark-100);
+                color: var(--primary-clr-yellow-100);
+                font-size: u.$fs-100;
+                font-weight: u.$fw-600;
+                padding: 0.15em 0.4em;
+                margin-right: 0.5em;
+                border-top-left-radius: 0.35em;
+              }
+            }
+
+            .body {
+              width: 100%;
+              height: 80%;
+              padding: 0.5em;
+              color: var(--text-clr-light);
+
+              h3 {
+                display: flex;
+                padding: 0.01em;
+                font-size: u.$fs-200;
+                font-weight: u.$fw-600;
+                margin-bottom: 1em;
+
+                .clock {
+                  margin-right: 2px;
+                  color: var(--primary-clr-yellow-100);
+                  font-size: u.$fs-300;
+                }
+              }
+
+              p {
+                font-size: 0.9rem;
+                font-weight: u.$fw-600;
+              }
+            }
+          }
+        }
+      }
+
+      .aside-health {
+        grid-column: 1 / span 2;
+        grid-row: 3 / span 4;
+
+        .container {
+          width: 100%;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: repeat(3, 1fr);
+
+          .img-container,
+          .content-container {
+            grid-row: 1 / 4;
+          }
+
+          .img-container {
+            grid-column: 1 / 4;
+
+            .img {
+              width: 100%;
+              height: 100%;
+              object-position: center;
+              object-fit: cover;
+            }
+          }
+
+          .content-container {
+            grid-column: 1 / 4;
+            background: var(--card-gradient);
+            z-index: 1;
+            display: flex;
+            flex-flow: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            overflow: hidden;
+
+            .head {
+              margin-block: 0.6em 1em;
+              margin-left: 0.6em;
+
+              .exclusive {
+                align-self: flex-start;
+                background: var(--primary-clr-dark-100);
+                color: var(--primary-clr-yellow-100);
+                font-size: u.$fs-100;
+                font-weight: u.$fw-600;
+                padding: 0.15em 0.4em;
+                margin-right: 0.5em;
+                border-top-left-radius: 0.35em;
+              }
+            }
+
+            .body {
+              width: 100%;
+              height: 80%;
+              padding: 0.5em;
+              color: var(--text-clr-light);
+
+              h3 {
+                font-size: u.$fs-200;
+                font-weight: u.$fw-600;
+                margin-bottom: 1em;
+              }
+
+              p {
+                font-size: 0.9rem;
+                font-weight: u.$fw-600;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -29,19 +192,22 @@
 @include u.breakpoint("850") {
   .banner-section {
     .container {
-      grid-template-columns: 1fr 1fr;
-      grid-auto-rows: 4fr;
+      grid-template-columns: repeat(2, 1fr);
 
       .main-banner {
-        grid-column: 1 / 3;
-        grid-row: 1 / 3;
+        grid-column: 1 / span 2;
       }
 
       .aside-banner {
-        grid-column: 1 / 3;
-        grid-row: 3/ 4;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1fr;
+        display: none;
+
+        .aside-upcoming {
+          display: none;
+        }
+
+        .aside-health {
+          display: none;
+        }
       }
     }
   }
@@ -49,24 +215,6 @@
 
 @include u.breakpoint("550") {
   .banner-section {
-    padding-inline: 0.3em;
-    .container {
-      grid-template-columns: 1fr 1fr;
-      grid-auto-rows: 4fr;
-
-      .main-banner {
-        grid-column: 1 / 4;
-        grid-row: 1 / 5;
-      }
-
-      .aside-banner {
-        display: block;
-        overflow: hidden;
-
-        div {
-          display: none;
-        }
-      }
-    }
+    padding-inline: 0.5em;
   }
 }

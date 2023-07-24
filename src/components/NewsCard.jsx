@@ -10,7 +10,7 @@ const NewsCard = () => {
   const id = 1;
 
   return (
-    <section style={{ paddingBlock: "10em" }} className="post-card">
+    <section className="post-card">
       <Link to={`blog/article/${id}`} className="post-card__link">
         <div className="post-content">
           <div className="head">

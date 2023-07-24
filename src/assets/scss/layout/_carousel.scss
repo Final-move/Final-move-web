@@ -1,0 +1,129 @@
+@use "../utils/" as u;
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  transition: all 750ms ease;
+
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 7;
+
+    background: var(--primary-clr-yellow-100);
+    color: var(--primary-clr-dark-100);
+    font-size: u.$fs-200;
+    font-weight: u.$fw-600;
+    padding: 0.7em 0.3em;
+    border-radius: 0.25em;
+    cursor: pointer;
+  }
+
+  .btn-left {
+    left: 0;
+  }
+
+  .btn-right {
+    right: 0;
+  }
+
+  .carousel-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    .slides {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      bottom: 0;
+      z-index: 5;
+      // display: none;
+
+      .image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+
+        &:hover {
+          transform: scale(1.1);
+          transition: transform 300ms ease;
+        }
+      }
+
+      .location-container {
+        background: var(--primary-clr-dark-900);
+        position: absolute;
+        top: 1em;
+        right: 1em;
+        padding: 0.5em 0.7em;
+        z-index: 3;
+
+        .location {
+          color: var(--text-clr-light);
+          font-size: u.$fs-200;
+          font-weight: u.$fw-600;
+          text-transform: capitalize;
+          display: flex;
+          align-items: center;
+
+          span {
+            color: var(--primary-clr-yellow-100);
+            font-size: u.$fs-300;
+            margin-right: 0.3em;
+          }
+        }
+      }
+
+      .slides-content {
+        width: 90%;
+        max-width: 800px;
+        background: var(--primary-clr-dark-900);
+        position: absolute;
+        left: 1em;
+        bottom: 6em;
+        border: 5px solid transparent;
+        border-left-color: var(--primary-clr-yellow-100);
+        padding: 0.5em 1em;
+        z-index: 3;
+
+        h3 {
+          color: var(--text-clr-light);
+          font-family: u.$ff-secondary;
+          font-size: u.$fs-200;
+          font-weight: u.$fw-700;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+}
+
+.navigation-dots {
+  position: absolute;
+  bottom: 1em;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  z-index: 8;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  background-color: #ccc;
+}
+
+.dot.active {
+  background-color: #333;
+}

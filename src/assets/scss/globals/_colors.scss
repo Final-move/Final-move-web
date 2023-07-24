@@ -15,4 +15,9 @@
 
   --card-box-shadow: 0 2px 4px var(--primary-clr-dark-900);
   --header-box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.3);
+  --card-gradient: linear-gradient(
+    0deg,
+    rgba(255, 217, 0, 0.25539565826330536) 6%,
+    rgba(0, 0, 0, 0.2581967787114846) 48%
+  );
 }

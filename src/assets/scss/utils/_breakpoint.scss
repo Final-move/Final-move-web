@@ -49,9 +49,9 @@ $breakpoint-down: (
   "600": 600px,
   "650": 650px,
   "700": 700px,
+  "mobile-nav": 750px,
   "800": 800px,
   "850": 850px,
-  "mobile-nav": 750px,
 );
 
 @mixin breakpoint($size) {

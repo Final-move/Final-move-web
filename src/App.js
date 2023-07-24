@@ -7,7 +7,7 @@ import About from "./pages/about/Page";
 import Blog from "./pages/blog/Page";
 import Resources from "./pages/resources/Page";
 import Contact from "./pages/contact/Page";
-import Search from "./components/Search";
+import Search from "./pages/search/Page";
 import Login from "./components/Login";
 import MobileNav from "./components/MobileNav";
 import BlogArticle from "./pages/blog/blog-article/Page";
@@ -38,6 +38,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/article/:id" element={<BlogArticle />} />
+          <Route path="/blog/article/health/:id" element={<BlogArticle />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/search" element={<Search />} />
