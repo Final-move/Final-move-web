@@ -30,6 +30,30 @@
     right: 0;
   }
 
+  .navigation-dots {
+    position: absolute;
+    bottom: 1em;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    z-index: 8;
+
+    .dot {
+      background-color: rgb(204, 204, 204);
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      margin: 0 5px;
+      cursor: pointer;
+
+      &.active {
+        background-color: rgb(51, 51, 51);
+      }
+    }
+  }
+
   .carousel-container {
     position: relative;
     width: 100%;
@@ -102,28 +126,4 @@
       }
     }
   }
-}
-
-.navigation-dots {
-  position: absolute;
-  bottom: 1em;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-  z-index: 8;
-}
-
-.dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  margin: 0 5px;
-  cursor: pointer;
-  background-color: #ccc;
-}
-
-.dot.active {
-  background-color: #333;
 }
