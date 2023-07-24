@@ -4,12 +4,12 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/home/Page";
 import About from "./pages/about/Page";
-import Blog from "./pages/blog/Page";
 import Resources from "./pages/resources/Page";
 import Contact from "./pages/contact/Page";
 import Search from "./pages/search/Page";
 import Login from "./components/Login";
 import MobileNav from "./components/MobileNav";
+import Blog from "./pages/blog/Page";
 import BlogArticle from "./pages/blog/blog-article/Page";
 
 export const toggleContext = React.createContext();
