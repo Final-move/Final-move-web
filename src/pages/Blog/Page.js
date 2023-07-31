@@ -3,9 +3,9 @@ import NotFound from "../../components/NotFound";
 
 const Blog = () => {
   return (
-    <div>
+    <>
       <NotFound />
-    </div>
+    </>
   );
 };
 
