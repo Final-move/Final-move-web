@@ -10,7 +10,7 @@ import Search from "./pages/search/Page";
 import Login from "./components/Login";
 import MobileNav from "./components/MobileNav";
 import Blog from "./pages/blog/Page";
-import BlogArticle from "./pages/blog/blog-article/Page";
+import BlogArticle from "./pages/blog/blog-article/BlogArticle";
 
 export const toggleContext = React.createContext();
 

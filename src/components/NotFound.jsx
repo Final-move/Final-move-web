@@ -6,7 +6,7 @@ const NotFound = () => {
     <div className="not-found-container">
       <FaRegFrown className="icon" />
       <h1>404 Not found</h1>
-      <p>Oops! The page you are looking for does not exist.</p>
+      <p>Oops! The page you are looking for currently isn't available.</p>
     </div>
   );
 };
