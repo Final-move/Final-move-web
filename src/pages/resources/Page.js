@@ -1,7 +1,12 @@
 import React from "react";
+import NotFound from "../../components/NotFound";
 
 const Resources = () => {
-  return <div style={{ height: "100vh", background: "yellow" }}>Resources</div>;
+  return (
+    <div>
+      <NotFound />
+    </div>
+  );
 };
 
 export default Resources;

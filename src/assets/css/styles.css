@@ -7,8 +7,8 @@
   src: url("/src/assets/fonts/opensans/OpenSans-VariableFont_wdth,wght.ttf");
 }
 @font-face {
-  font-family: londrina;
-  src: url("/src/assets/fonts/londrina/LondrinaShadow-Regular.ttf");
+  font-family: nostromo_outline;
+  src: url("/src/assets/fonts/nostromo-outline/NostromoOutline-Medium.otf");
 }
 *,
 *::before,
@@ -194,6 +194,41 @@ html {
     padding-inline: 1em;
   }
 }
+.not-found-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  background: var(--primary-clr-yellow-100);
+  color: var(--text-clr-dark);
+}
+.not-found-container .icon {
+  font-size: 4rem;
+  font-weight: 700;
+  animation: bounce 2s infinite;
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+.not-found-container h1 {
+  font-size: 2.5rem;
+  margin-top: 1rem;
+}
+.not-found-container p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
 header {
   position: relative;
   background: var(--primary-clr-white-100);
@@ -211,9 +246,9 @@ header .logo-container {
 }
 header .logo-container .logo {
   color: var(--primary-clr-yellow-100);
-  font-family: londrina;
+  font-family: nostromo_outline;
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 header .nav-toggle {
   display: none;
@@ -439,6 +474,7 @@ header .nav-links li a:hover::before {
 .banner-section .container .main-banner {
   position: relative;
   grid-row: 1/span 4;
+  overflow-y: hidden;
 }
 .banner-section .container .aside-banner {
   grid-row: 1/span 4;
@@ -608,7 +644,7 @@ header .nav-links li a:hover::before {
   position: relative;
   width: 100%;
   height: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
   transition: all 750ms ease;
 }
 .carousel .carousel-btn {
@@ -715,6 +751,11 @@ header .nav-links li a:hover::before {
   text-transform: capitalize;
 }
 
+@media (max-width: 400px) {
+  .carousel .carousel-btn {
+    display: none;
+  }
+}
 .homeNews-section {
   background: var(--primary-clr-white-100);
   display: grid;

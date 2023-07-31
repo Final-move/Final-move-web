@@ -1,7 +1,12 @@
 import React from "react";
+import NotFound from "../../components/NotFound";
 
 const Blog = () => {
-  return <div style={{ height: "100vh", background: "yellow" }}>Blog</div>;
+  return (
+    <div>
+      <NotFound />
+    </div>
+  );
 };
 
 export default Blog;

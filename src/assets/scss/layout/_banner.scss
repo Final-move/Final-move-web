@@ -18,6 +18,7 @@
     .main-banner {
       position: relative;
       grid-row: 1 / span 4;
+      overflow-y: hidden;
     }
 
     .aside-banner {

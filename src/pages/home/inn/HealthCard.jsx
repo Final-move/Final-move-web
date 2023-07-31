@@ -7,7 +7,7 @@ const HealthCard = () => {
   const id = 2;
 
   return (
-    <Link to={`blog/article/health/${id}`} className="container">
+    <Link to={`blog/article/${id}`} className="container">
       <div className="img-container">
         <Img src={img1} alt={"health"} className={"img"} />
       </div>

@@ -1,7 +1,12 @@
 import React from "react";
+import NotFound from "../../components/NotFound";
 
 const Contact = () => {
-  return <div style={{ height: "100vh", background: "yellow" }}>Contact</div>;
+  return (
+    <div>
+      <NotFound />
+    </div>
+  );
 };
 
 export default Contact;

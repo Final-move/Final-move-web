@@ -1,7 +1,12 @@
 import React from "react";
+import NotFound from "../../components/NotFound";
 
 const Search = () => {
-  return <>Lorem, ipsum dolor sit amet consectetur adipisicing.</>;
+  return (
+    <>
+      <NotFound />
+    </>
+  );
 };
 
 export default Search;

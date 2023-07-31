@@ -9,14 +9,14 @@
 }
 
 @font-face {
-  font-family: londrina;
-  src: url("/src/assets/fonts/londrina/LondrinaShadow-Regular.ttf");
+  font-family: nostromo_outline;
+  src: url("/src/assets/fonts/nostromo-outline/NostromoOutline-Medium.otf");
 }
 
 //font-family styling
 $ff-primary: opensans;
 $ff-secondary: montserrat;
-$ff-header: londrina;
+$ff-header: nostromo_outline;
 
 $ff-body: $ff-primary;
 $ff-head: $ff-header;
