@@ -5,7 +5,7 @@ import PageContainer from "../../components/PageContainer";
 const BannerNews = () => {
   return (
     <PageContainer className="homeNews-section">
-      <section className="main-news">
+      <section className="home-main-news">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur in
         repudiandae aliquam natus ipsam pariatur laborum maiores, sit amet
         nobis, impedit praesentium asperiores corporis labore voluptas expedita
@@ -15,7 +15,7 @@ const BannerNews = () => {
         obcaecati iste! Consequuntur, sunt animi! Quaerat quas tenetur molestiae
         debitis consequatur dolore magnam doloribus qui.
       </section>
-      <aside className="aside-news">
+      <aside className="home-aside-news">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
         necessitatibus reprehenderit tempore reiciendis adipisci explicabo
         cumque, quod corporis temporibus perferendis?

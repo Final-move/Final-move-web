@@ -11,5 +11,13 @@
 @include u.breakpoint("850") {
   .homeNews-section {
     grid-template-columns: 5em;
+
+    .home-main-news {
+      grid-column: 1 / 3;
+    }
+
+    .home-aside-news {
+      grid-column: 1 / 3;
+    }
   }
 }
