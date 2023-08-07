@@ -90,37 +90,37 @@
   }
 }
 
-@include u.breakpoint-up("520") {
-  .post-card {
-    &__link {
-      .post-content {
-        .head {
-          flex-flow: row;
+// @include u.breakpoint-up("520") {
+//   .post-card {
+//     &__link {
+//       .post-content {
+//         .head {
+//           flex-flow: row;
 
-          .content {
-            width: 55%;
-            height: 200px;
-            overflow: hidden;
+//           .content {
+//             width: 55%;
+//             height: 200px;
+//             overflow: hidden;
 
-            order: 2;
-            margin-bottom: 0;
-            margin-left: 1em;
+//             order: 2;
+//             margin-bottom: 0;
+//             margin-left: 1em;
 
-            .exclusive {
-              border-top-left-radius: 0;
-            }
-          }
+//             .exclusive {
+//               border-top-left-radius: 0;
+//             }
+//           }
 
-          .img-container {
-            width: 45%;
-            order: 1;
-            border-top-left-radius: 0.35em;
-          }
-        }
-      }
-    }
-  }
-}
+//           .img-container {
+//             width: 45%;
+//             order: 1;
+//             border-top-left-radius: 0.35em;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
 
 @include u.breakpoint-up("670") {
   .post-card {
