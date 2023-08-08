@@ -21,39 +21,41 @@
       border-bottom: 1px solid var(--primary-clr-grey-100);
       width: 100%;
       min-height: 10%;
-      padding: 1em 0.5em;
+      padding: 1em;
       @include u.flexCenter;
 
       .user-profile {
         width: 100%;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: flex-start;
 
         .user-details {
-          margin-right: 1em;
+          order: 2;
+          margin-left: 1em;
 
           h5 {
             color: var(--text-clr-light);
-            font-size: u.$fs-200;
+            font-size: u.$fs-100;
             font-weight: u.$fw-500;
           }
 
           p {
             color: var(--primary-clr-yellow-100);
-            font-size: 0.9rem;
+            font-size: 0.8rem;
             font-weight: u.$fw-400;
           }
         }
 
         .img-container {
+          order: 1;
           border-radius: 50%;
           border: 1px solid var(--primary-clr-yellow-100);
           overflow: hidden;
 
           .img {
-            width: 60px;
-            height: 60px;
+            width: 50px;
+            height: 50px;
             border-radius: 50%;
             object-fit: cover;
             object-position: center;
