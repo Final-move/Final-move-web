@@ -6,7 +6,7 @@ import {
   FaFacebookSquare,
   FaCaretRight,
 } from "react-icons/fa";
-import Logo from "../assets/media/images/final move logo.jpg";
+import Logo from "../assets/media/images/logo/final move logo.jpg";
 
 const Footer = () => {
   const date = new Date().getFullYear();

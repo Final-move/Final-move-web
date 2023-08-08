@@ -1,0 +1,98 @@
+@use "../utils/" as u;
+
+.login-section {
+  background: url("/src/assets/media/images/city.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  max-height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .container {
+    width: 100%;
+    max-width: 550px;
+    margin-inline: auto;
+    padding: 2em 1em;
+    border: 1px solid var(--primary-clr-yellow-100);
+    border-radius: 0.5em;
+
+    .head {
+      margin-bottom: 3em;
+    }
+
+    .form {
+      width: 100%;
+      display: grid;
+      gap: 2em;
+
+      div {
+        position: relative;
+
+        input {
+          background: transparent;
+          color: var(--text-clr-light);
+          position: relative;
+          width: 100%;
+          height: 4em;
+          padding: 1em;
+          z-index: 1;
+          font-size: u.$fs-100;
+          font-weight: u.$fw-400;
+          outline: transparent;
+          border: 1px solid var(--primary-clr-yellow-100);
+          border-radius: 0.5em;
+        }
+
+        .label {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          left: 1em;
+          font-size: u.$fs-100;
+          font-weight: u.$fw-400;
+          color: var(--text-clr-light);
+          transition: all 350ms ease-in;
+          pointer-events: none;
+          z-index: 2;
+        }
+
+        input:focus + .label {
+          top: 0;
+          padding: 0.25em;
+          background: var(--primary-clr-yellow-100);
+          color: var(--text-clr-dark);
+          font-size: 0.9rem;
+          font-weight: u.$fw-400;
+          transition: all 350ms ease-in;
+        }
+
+        &:last-child {
+          display: flex;
+          justify-content: flex-end;
+
+          .submit-btn {
+            background: var(--primary-clr-yellow-100);
+            color: var(--text-clr-light);
+            border: 1px solid transparent;
+            border-radius: 0.5em;
+            padding: 0.7em 1em;
+            font-size: u.$fs-100;
+            font-weight: u.$fw-500;
+            transition: all 250ms ease;
+
+            &:hover,
+            &:active {
+              background: transparent;
+              color: var(--primary-clr-yellow-100);
+              border-color: var(--primary-clr-yellow-100);
+              transition: all 250ms ease;
+            }
+          }
+        }
+      }
+    }
+  }
+}
