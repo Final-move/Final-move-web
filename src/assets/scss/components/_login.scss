@@ -6,7 +6,7 @@
   background-position: center;
   width: 100%;
   height: 100vh;
-  max-height: 550px;
+  max-height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -98,6 +98,51 @@
               transition: all 250ms ease;
             }
           }
+        }
+      }
+
+      .remember-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-inline: 0.5em;
+
+        .remember {
+          label {
+            font-size: u.$fs-100;
+            font-weight: u.$fw-500;
+            color: var(--text-clr-light);
+
+            .remember-btn {
+              width: 1em;
+              height: 1em;
+              margin-right: 5px;
+            }
+          }
+        }
+
+        .forgot {
+          p {
+            a {
+              font-size: u.$fs-100;
+              font-weight: u.$fw-500;
+              color: var(--primary-clr-yellow-100);
+            }
+          }
+        }
+      }
+    }
+
+    .foot {
+      margin-top: 2em;
+      h5 {
+        text-align: center;
+        font-size: u.$fs-100;
+        font-weight: u.$fw-500;
+        color: var(--text-clr-light);
+
+        a {
+          color: var(--primary-clr-yellow-100);
         }
       }
     }

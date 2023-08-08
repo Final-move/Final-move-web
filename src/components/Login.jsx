@@ -2,10 +2,12 @@ import React, { useState } from "react";
 import PageContainer from "./PageContainer";
 import Img from "./optimization/Img";
 import Logo from "../assets/media/images/logo/final move logo.jpg";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
+  const [isRemember, setIsRemember] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -46,12 +48,36 @@ const Login = () => {
               Your password
             </label>
           </div>
+          <div className="remember-container">
+            <div className="remember">
+              <label htmlFor="remember">
+                <input
+                  type="checkbox"
+                  name="remember"
+                  value={isRemember}
+                  onClick={() => setIsRemember(!isRemember)}
+                  className="remember-btn"
+                />
+                Remember me
+              </label>
+            </div>
+            <div className="forgot">
+              <p>
+                <Link to={`/fogotpassword`}>Forgot Password</Link>
+              </p>
+            </div>
+          </div>
           <div>
             <button type="submit" className="submit-btn">
               Submit
             </button>
           </div>
         </form>
+        <div className="foot">
+          <h5>
+            Are you a first timer? <Link to={`/signup`}>Signup today</Link>
+          </h5>
+        </div>
       </div>
     </PageContainer>
   );

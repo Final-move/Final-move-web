@@ -233,7 +233,7 @@ html {
   background-position: center;
   width: 100%;
   height: 100vh;
-  max-height: 550px;
+  max-height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -317,6 +317,39 @@ html {
   color: var(--primary-clr-yellow-100);
   border-color: var(--primary-clr-yellow-100);
   transition: all 250ms ease;
+}
+.login-section .container .form .remember-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 0.5em;
+}
+.login-section .container .form .remember-container .remember label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-clr-light);
+}
+.login-section .container .form .remember-container .remember label .remember-btn {
+  width: 1em;
+  height: 1em;
+  margin-right: 5px;
+}
+.login-section .container .form .remember-container .forgot p a {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--primary-clr-yellow-100);
+}
+.login-section .container .foot {
+  margin-top: 2em;
+}
+.login-section .container .foot h5 {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-clr-light);
+}
+.login-section .container .foot h5 a {
+  color: var(--primary-clr-yellow-100);
 }
 
 .post-card {

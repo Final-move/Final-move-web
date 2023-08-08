@@ -9,6 +9,7 @@ import Contact from "./pages/contact/Page";
 import Search from "./pages/search/Page";
 import Login from "./components/Login";
 import MobileNav from "./components/MobileNav";
+import Signup from "./components/Signup";
 // import Blog from "./pages/blog/Blog";
 // import BlogArticle from "./pages/blog/blog-article/BlogArticle";
 
@@ -42,6 +43,7 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="/search" element={<Search />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
         </Routes>
 
         <Footer />
