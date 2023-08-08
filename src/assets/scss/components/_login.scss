@@ -1,7 +1,7 @@
 @use "../utils/" as u;
 
 .login-section {
-  background: url("/src/assets/media/images/city.jpg") no-repeat;
+  background: url("/src/assets/media/images/holy-bg.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -10,6 +10,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  backdrop-filter: blur(2px);
 
   .container {
     width: 100%;
@@ -21,6 +22,12 @@
 
     .head {
       margin-bottom: 3em;
+
+      .logo {
+        width: 30%;
+        border-radius: 50%;
+        margin-inline: auto;
+      }
     }
 
     .form {
@@ -75,12 +82,12 @@
 
           .submit-btn {
             background: var(--primary-clr-yellow-100);
-            color: var(--text-clr-light);
+            color: var(--text-clr-dark);
             border: 1px solid transparent;
             border-radius: 0.5em;
             padding: 0.7em 1em;
             font-size: u.$fs-100;
-            font-weight: u.$fw-500;
+            font-weight: u.$fw-600;
             transition: all 250ms ease;
 
             &:hover,

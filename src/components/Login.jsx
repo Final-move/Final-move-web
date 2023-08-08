@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import PageContainer from "./PageContainer";
 import Img from "./optimization/Img";
+import Logo from "../assets/media/images/logo/final move logo.jpg";
 
 const Login = () => {
   const [name, setName] = useState("");
@@ -14,7 +15,11 @@ const Login = () => {
     <PageContainer className={"login-section"}>
       <div className="container">
         <div className="head">
-          <Img />
+          <Img
+            src={Logo}
+            alt={`sign fireman ministry logo`}
+            className={`logo`}
+          />
         </div>
         <form onSubmit={handleSubmit} className="form">
           <div>
