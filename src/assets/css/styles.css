@@ -276,6 +276,16 @@ html {
   border: 1px solid var(--primary-clr-yellow-100);
   border-radius: 0.5em;
 }
+.login-section .container .form div .togglepassword {
+  position: absolute;
+  color: var(--primary-clr-yellow-100);
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1em;
+  font-size: 1.2rem;
+  font-weight: 500;
+  z-index: 2;
+}
 .login-section .container .form div .label {
   position: absolute;
   top: 50%;
@@ -289,6 +299,15 @@ html {
   z-index: 2;
 }
 .login-section .container .form div input:focus + .label {
+  top: 0;
+  padding: 0.25em;
+  background: var(--primary-clr-yellow-100);
+  color: var(--text-clr-dark);
+  font-size: 0.9rem;
+  font-weight: 400;
+  transition: all 350ms ease-in;
+}
+.login-section .container .form div .togglepassword:active + .label {
   top: 0;
   padding: 0.25em;
   background: var(--primary-clr-yellow-100);
@@ -352,7 +371,7 @@ html {
 }
 
 .signup-section {
-  background: url("/src/assets/media/images/holy-bg.jpg") no-repeat;
+  background: url("/src/assets/media/images/worship-bg.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -390,6 +409,18 @@ html {
   justify-content: space-between;
   align-items: center;
   column-gap: 1em;
+}
+.signup-section .container .form .phonenumber .label {
+  left: 3.5em;
+}
+.signup-section .container .form .phonenumber .animatedlabel {
+  top: 0;
+  padding: 0.25em;
+  background: var(--primary-clr-yellow-100);
+  color: var(--text-clr-dark);
+  font-size: 0.9rem;
+  font-weight: 400;
+  transition: all 350ms ease-in;
 }
 .signup-section .container .form div {
   position: relative;

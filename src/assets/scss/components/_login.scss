@@ -52,6 +52,17 @@
           border-radius: 0.5em;
         }
 
+        .togglepassword {
+          position: absolute;
+          color: var(--primary-clr-yellow-100);
+          top: 50%;
+          transform: translateY(-50%);
+          right: 1em;
+          font-size: u.$fs-200;
+          font-weight: u.$fw-500;
+          z-index: 2;
+        }
+
         .label {
           position: absolute;
           top: 50%;
@@ -66,6 +77,16 @@
         }
 
         input:focus + .label {
+          top: 0;
+          padding: 0.25em;
+          background: var(--primary-clr-yellow-100);
+          color: var(--text-clr-dark);
+          font-size: 0.9rem;
+          font-weight: u.$fw-400;
+          transition: all 350ms ease-in;
+        }
+
+        .togglepassword:active + .label {
           top: 0;
           padding: 0.25em;
           background: var(--primary-clr-yellow-100);

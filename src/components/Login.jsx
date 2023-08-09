@@ -3,11 +3,22 @@ import PageContainer from "./PageContainer";
 import Img from "./optimization/Img";
 import Logo from "../assets/media/images/logo/final move logo.jpg";
 import { Link } from "react-router-dom";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 const Login = () => {
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
   const [isRemember, setIsRemember] = useState(false);
+
+  const handlePasswordChange = (event) => {
+    const newPassword = event.target.value;
+    setPassword(newPassword);
+  };
+
+  const toggleShowPassword = () => {
+    setShowPassword(!showPassword);
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -38,15 +49,22 @@ const Login = () => {
           </div>
           <div>
             <input
-              type="text"
+              type={showPassword ? "text" : "password"}
               name="password"
               value={password}
-              onChange={(e) => setPassword(e.target.value)}
+              onChange={handlePasswordChange}
               required
             />
             <label className="label" htmlFor="password">
               Your password
             </label>
+            <button
+              type="button"
+              onClick={toggleShowPassword}
+              className="togglepassword"
+            >
+              {showPassword ? <FaEyeSlash /> : <FaEye />}
+            </button>
           </div>
           <div className="remember-container">
             <div className="remember">

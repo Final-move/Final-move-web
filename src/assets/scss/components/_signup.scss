@@ -1,7 +1,7 @@
 @use "../utils/" as u;
 
 .signup-section {
-  background: url("/src/assets/media/images/holy-bg.jpg") no-repeat;
+  background: url("/src/assets/media/images/worship-bg.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -41,6 +41,22 @@
         justify-content: space-between;
         align-items: center;
         column-gap: 1em;
+      }
+
+      .phonenumber {
+        .label {
+          left: 3.5em;
+        }
+
+        .animatedlabel {
+          top: 0;
+          padding: 0.25em;
+          background: var(--primary-clr-yellow-100);
+          color: var(--text-clr-dark);
+          font-size: 0.9rem;
+          font-weight: u.$fw-400;
+          transition: all 350ms ease-in;
+        }
       }
 
       div {

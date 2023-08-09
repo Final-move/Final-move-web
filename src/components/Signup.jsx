@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import PageContainer from "./PageContainer";
+import PhoneNumberInput from "./inn/PhoneNumberInput";
 import Img from "./optimization/Img";
 import Logo from "../assets/media/images/logo/final move logo.jpg";
 import { Link } from "react-router-dom";
+import "react-phone-number-input/style.css";
+import PasswordInput from "./inn/PasswordInput";
 
 const Signup = () => {
   const [firstName, setFirstName] = useState("");
@@ -10,9 +13,14 @@ const Signup = () => {
   const [email, setEmail] = useState("");
   const [address, setAddress] = useState("");
   const [isAccept, setIsAccept] = useState(false);
+  const [phoneNumber, setPhoneNumber] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
+  };
+
+  const handlePhoneNumberChange = (value) => {
+    setPhoneNumber(value);
   };
 
   return (
@@ -55,6 +63,14 @@ const Signup = () => {
             />
             <label className="label">Email</label>
           </div>
+          <div className="phonenumber">
+            <PhoneNumberInput
+              value={phoneNumber}
+              onChange={handlePhoneNumberChange}
+              label="Phone Number"
+              inputClass={"input"}
+            />
+          </div>
           <div>
             <input
               type="text"
@@ -62,8 +78,9 @@ const Signup = () => {
               onChange={(e) => setAddress(e.target.value)}
               required
             />
-            <label className="label">Address</label>
+            <label className="label">Home address</label>
           </div>
+          <PasswordInput />
           <div className="remember-container">
             <div className="remember">
               <label htmlFor="remember">
