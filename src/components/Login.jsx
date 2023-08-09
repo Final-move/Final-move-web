@@ -43,7 +43,10 @@ const Login = () => {
               onChange={(e) => setName(e.target.value)}
               required
             />
-            <label className="label" htmlFor="email">
+            <label
+              className={`label ${name ? "animatedlabel" : ""}`}
+              htmlFor="email"
+            >
               Email or mobile number
             </label>
           </div>
@@ -55,7 +58,10 @@ const Login = () => {
               onChange={handlePasswordChange}
               required
             />
-            <label className="label" htmlFor="password">
+            <label
+              className={`label ${password ? "animatedlabel" : ""}`}
+              htmlFor="password"
+            >
               Your password
             </label>
             <button
@@ -85,7 +91,7 @@ const Login = () => {
               </p>
             </div>
           </div>
-          <div>
+          <div className="submit-btn-container">
             <button type="submit" className="submit-btn">
               Login
             </button>

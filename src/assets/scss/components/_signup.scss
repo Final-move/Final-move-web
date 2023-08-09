@@ -44,6 +44,12 @@
       }
 
       .phonenumber {
+        .PhoneInputCountryIconImg {
+          color: var(--primary-clr-yellow-100);
+          font-size: u.$fs-300;
+          font-weight: u.$fw-500;
+        }
+
         .label {
           left: 3.5em;
         }
@@ -56,6 +62,26 @@
           font-size: 0.9rem;
           font-weight: u.$fw-400;
           transition: all 350ms ease-in;
+        }
+      }
+
+      .password-container {
+        display: grid;
+        row-gap: 2em;
+
+        input {
+          width: 100%;
+        }
+
+        .error-container {
+          .form-error-message {
+            height: 1em;
+            margin-top: 2px;
+            text-align: left;
+            color: var(--text-clr-error);
+            font-size: 0.8rem;
+            font-weight: u.$fw-500;
+          }
         }
       }
 
@@ -77,6 +103,17 @@
           border-radius: 0.5em;
         }
 
+        .togglepassword {
+          position: absolute;
+          color: var(--primary-clr-yellow-100);
+          top: 50%;
+          transform: translateY(-50%);
+          right: 1em;
+          font-size: u.$fs-200;
+          font-weight: u.$fw-500;
+          z-index: 2;
+        }
+
         .label {
           position: absolute;
           top: 50%;
@@ -90,7 +127,7 @@
           z-index: 2;
         }
 
-        input:focus + .label {
+        .animatedlabel {
           top: 0;
           padding: 0.25em;
           background: var(--primary-clr-yellow-100);
@@ -99,28 +136,28 @@
           font-weight: u.$fw-400;
           transition: all 350ms ease-in;
         }
+      }
 
-        &:last-child {
-          display: flex;
-          justify-content: flex-end;
+      .submit-btn-container {
+        display: flex;
+        justify-content: flex-end;
 
-          .submit-btn {
-            background: var(--primary-clr-yellow-100);
-            color: var(--text-clr-dark);
-            border: 1px solid transparent;
-            border-radius: 0.5em;
-            padding: 0.7em 1em;
-            font-size: u.$fs-100;
-            font-weight: u.$fw-600;
+        .submit-btn {
+          background: var(--primary-clr-yellow-100);
+          color: var(--text-clr-dark);
+          border: 1px solid transparent;
+          border-radius: 0.5em;
+          padding: 0.7em 2em;
+          font-size: u.$fs-100;
+          font-weight: u.$fw-600;
+          transition: all 250ms ease;
+
+          &:hover,
+          &:active {
+            background: transparent;
+            color: var(--primary-clr-yellow-100);
+            border-color: var(--primary-clr-yellow-100);
             transition: all 250ms ease;
-
-            &:hover,
-            &:active {
-              background: transparent;
-              color: var(--primary-clr-yellow-100);
-              border-color: var(--primary-clr-yellow-100);
-              transition: all 250ms ease;
-            }
           }
         }
       }

@@ -8,6 +8,7 @@ import "react-phone-number-input/style.css";
 import PasswordInput from "./inn/PasswordInput";
 
 const Signup = () => {
+  const [userName, setUserName] = useState("");
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
@@ -42,7 +43,9 @@ const Signup = () => {
                 onChange={(e) => setFirstName(e.target.value)}
                 required
               />
-              <label className="label">FirstName</label>
+              <label className={`label ${firstName ? "animatedlabel" : ""}`}>
+                FirstName
+              </label>
             </div>
             <div>
               <input
@@ -51,8 +54,21 @@ const Signup = () => {
                 onChange={(e) => setLastName(e.target.value)}
                 required
               />
-              <label className="label">LastName</label>
+              <label className={`label ${lastName ? "animatedlabel" : ""}`}>
+                LastName
+              </label>
             </div>
+          </div>
+          <div>
+            <input
+              type="text"
+              value={userName}
+              onChange={(e) => setUserName(e.target.value)}
+              required
+            />
+            <label className={`label ${userName ? "animatedlabel" : ""}`}>
+              Username
+            </label>
           </div>
           <div>
             <input
@@ -61,7 +77,9 @@ const Signup = () => {
               onChange={(e) => setEmail(e.target.value)}
               required
             />
-            <label className="label">Email</label>
+            <label className={`label ${email ? "animatedlabel" : ""}`}>
+              Email
+            </label>
           </div>
           <div className="phonenumber">
             <PhoneNumberInput
@@ -78,9 +96,13 @@ const Signup = () => {
               onChange={(e) => setAddress(e.target.value)}
               required
             />
-            <label className="label">Home address</label>
+            <label className={`label ${address ? "animatedlabel" : ""}`}>
+              Home address
+            </label>
           </div>
-          <PasswordInput />
+          <div className="password-container">
+            <PasswordInput />
+          </div>
           <div className="remember-container">
             <div className="remember">
               <label htmlFor="remember">
@@ -96,7 +118,7 @@ const Signup = () => {
               </label>
             </div>
           </div>
-          <div>
+          <div className="submit-btn-container">
             <button type="submit" className="submit-btn">
               Signup
             </button>
