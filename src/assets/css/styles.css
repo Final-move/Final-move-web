@@ -236,7 +236,6 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  backdrop-filter: blur(2px);
 }
 .login-section .container {
   background: var(--primary-clr-dark-900);
@@ -349,6 +348,138 @@ html {
   color: var(--text-clr-light);
 }
 .login-section .container .foot h5 a {
+  color: var(--primary-clr-yellow-100);
+}
+
+.signup-section {
+  background: url("/src/assets/media/images/holy-bg.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 100vh;
+  padding-block: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signup-section .container {
+  background: var(--primary-clr-dark-900);
+  width: 100%;
+  max-width: 550px;
+  margin-inline: auto;
+  padding: 2em 1em;
+  border: 1px solid var(--primary-clr-yellow-100);
+  border-radius: 0.5em;
+}
+.signup-section .container .head {
+  margin-bottom: 3em;
+}
+.signup-section .container .head .logo {
+  width: 30%;
+  border-radius: 50%;
+  margin-inline: auto;
+}
+.signup-section .container .form {
+  width: 100%;
+  display: grid;
+  gap: 2em;
+}
+.signup-section .container .form .name {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 1em;
+}
+.signup-section .container .form div {
+  position: relative;
+}
+.signup-section .container .form div input {
+  background: transparent;
+  color: var(--text-clr-light);
+  position: relative;
+  width: 100%;
+  height: 4em;
+  padding: 1em;
+  z-index: 1;
+  font-size: 1rem;
+  font-weight: 400;
+  outline: transparent;
+  border: 1px solid var(--primary-clr-yellow-100);
+  border-radius: 0.5em;
+}
+.signup-section .container .form div .label {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 1em;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--text-clr-light);
+  transition: all 350ms ease-in;
+  pointer-events: none;
+  z-index: 2;
+}
+.signup-section .container .form div input:focus + .label {
+  top: 0;
+  padding: 0.25em;
+  background: var(--primary-clr-yellow-100);
+  color: var(--text-clr-dark);
+  font-size: 0.9rem;
+  font-weight: 400;
+  transition: all 350ms ease-in;
+}
+.signup-section .container .form div:last-child {
+  display: flex;
+  justify-content: flex-end;
+}
+.signup-section .container .form div:last-child .submit-btn {
+  background: var(--primary-clr-yellow-100);
+  color: var(--text-clr-dark);
+  border: 1px solid transparent;
+  border-radius: 0.5em;
+  padding: 0.7em 1em;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 250ms ease;
+}
+.signup-section .container .form div:last-child .submit-btn:hover, .signup-section .container .form div:last-child .submit-btn:active {
+  background: transparent;
+  color: var(--primary-clr-yellow-100);
+  border-color: var(--primary-clr-yellow-100);
+  transition: all 250ms ease;
+}
+.signup-section .container .form .remember-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 0.5em;
+}
+.signup-section .container .form .remember-container .remember label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-clr-light);
+}
+.signup-section .container .form .remember-container .remember label .remember-btn {
+  width: 1em;
+  height: 1em;
+  margin-right: 5px;
+}
+.signup-section .container .form .remember-container .remember label a {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--primary-clr-yellow-100);
+}
+.signup-section .container .foot {
+  margin-top: 2em;
+}
+.signup-section .container .foot h5 {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-clr-light);
+}
+.signup-section .container .foot h5 a {
   color: var(--primary-clr-yellow-100);
 }
 

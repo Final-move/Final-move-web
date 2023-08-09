@@ -1,1 +1,154 @@
 @use "../utils/" as u;
+
+.signup-section {
+  background: url("/src/assets/media/images/holy-bg.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 100vh;
+  padding-block: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .container {
+    background: var(--primary-clr-dark-900);
+    width: 100%;
+    max-width: 550px;
+    margin-inline: auto;
+    padding: 2em 1em;
+    border: 1px solid var(--primary-clr-yellow-100);
+    border-radius: 0.5em;
+
+    .head {
+      margin-bottom: 3em;
+
+      .logo {
+        width: 30%;
+        border-radius: 50%;
+        margin-inline: auto;
+      }
+    }
+
+    .form {
+      width: 100%;
+      display: grid;
+      gap: 2em;
+
+      .name {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 1em;
+      }
+
+      div {
+        position: relative;
+
+        input {
+          background: transparent;
+          color: var(--text-clr-light);
+          position: relative;
+          width: 100%;
+          height: 4em;
+          padding: 1em;
+          z-index: 1;
+          font-size: u.$fs-100;
+          font-weight: u.$fw-400;
+          outline: transparent;
+          border: 1px solid var(--primary-clr-yellow-100);
+          border-radius: 0.5em;
+        }
+
+        .label {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          left: 1em;
+          font-size: u.$fs-100;
+          font-weight: u.$fw-400;
+          color: var(--text-clr-light);
+          transition: all 350ms ease-in;
+          pointer-events: none;
+          z-index: 2;
+        }
+
+        input:focus + .label {
+          top: 0;
+          padding: 0.25em;
+          background: var(--primary-clr-yellow-100);
+          color: var(--text-clr-dark);
+          font-size: 0.9rem;
+          font-weight: u.$fw-400;
+          transition: all 350ms ease-in;
+        }
+
+        &:last-child {
+          display: flex;
+          justify-content: flex-end;
+
+          .submit-btn {
+            background: var(--primary-clr-yellow-100);
+            color: var(--text-clr-dark);
+            border: 1px solid transparent;
+            border-radius: 0.5em;
+            padding: 0.7em 1em;
+            font-size: u.$fs-100;
+            font-weight: u.$fw-600;
+            transition: all 250ms ease;
+
+            &:hover,
+            &:active {
+              background: transparent;
+              color: var(--primary-clr-yellow-100);
+              border-color: var(--primary-clr-yellow-100);
+              transition: all 250ms ease;
+            }
+          }
+        }
+      }
+
+      .remember-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-inline: 0.5em;
+
+        .remember {
+          label {
+            font-size: u.$fs-100;
+            font-weight: u.$fw-500;
+            color: var(--text-clr-light);
+
+            .remember-btn {
+              width: 1em;
+              height: 1em;
+              margin-right: 5px;
+            }
+
+            a {
+              font-size: u.$fs-100;
+              font-weight: u.$fw-500;
+              color: var(--primary-clr-yellow-100);
+            }
+          }
+        }
+      }
+    }
+
+    .foot {
+      margin-top: 2em;
+      h5 {
+        text-align: center;
+        font-size: u.$fs-100;
+        font-weight: u.$fw-500;
+        color: var(--text-clr-light);
+
+        a {
+          color: var(--primary-clr-yellow-100);
+        }
+      }
+    }
+  }
+}
