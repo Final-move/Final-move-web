@@ -233,13 +233,13 @@ html {
   background-position: center;
   width: 100%;
   height: 100vh;
-  max-height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
   backdrop-filter: blur(2px);
 }
 .login-section .container {
+  background: var(--primary-clr-dark-900);
   width: 100%;
   max-width: 550px;
   margin-inline: auto;
