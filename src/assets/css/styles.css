@@ -429,6 +429,7 @@ html {
 .signup-section .container .form .password-container .error-container .form-error-message {
   height: 1em;
   margin-top: 2px;
+  margin-left: 0.2em;
   text-align: left;
   color: var(--text-clr-error);
   font-size: 0.8rem;
