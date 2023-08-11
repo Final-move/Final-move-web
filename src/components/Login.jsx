@@ -99,7 +99,7 @@ const Login = () => {
         </form>
         <div className="foot">
           <h5>
-            Don*t have an account? <Link to={`/signup`}>Signup today</Link>
+            Don't have an account? <Link to={`/signup`}>Signup today</Link>
           </h5>
         </div>
       </div>

@@ -1,13 +1,14 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 
 const Seo = ({ title }) => {
   return (
-    <head>
+    <Helmet>
       <title>{title ? title : "Sign Fireman Ministry"}</title>
       <meta name="description" content="" />
       <meta
         name="keywords"
-        content="Sign Fireman Ministry, Final Move Of God, Sign Fireman, The Move Of God"
+        content="Sign Fireman Ministry, Sign Fireman, Final Move Of God,  The Move Of God, Final Move"
       />
       <meta name="author" content="Sign Fireman Ministry" />
       <meta name="robots" content="all" />
@@ -30,7 +31,7 @@ const Seo = ({ title }) => {
         title="Sitemap"
         href="atom.xml"
       />
-    </head>
+    </Helmet>
   );
 };
 
