@@ -10,8 +10,7 @@ import Search from "./pages/search/Page";
 import Login from "./components/Login";
 import MobileNav from "./components/MobileNav";
 import Signup from "./components/Signup";
-// import Blog from "./pages/blog/Blog";
-// import BlogArticle from "./pages/blog/blog-article/BlogArticle";
+import Blog from "./pages/blog/Page";
 
 export const toggleContext = React.createContext();
 
@@ -37,7 +36,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          {/* <Route path="/blog" element={<Blog />} /> */}
+          <Route path="/blog" element={<Blog />} />
           {/* <Route path="/blog/article/:id" element={<BlogArticle />} /> */}
           <Route path="/resources" element={<Resources />} />
           <Route path="/contact" element={<Contact />} />
