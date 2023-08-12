@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { FaBars, FaSearch, FaTimes } from "react-icons/fa";
+import { FaBars, FaSearch, FaTimes, FaUserCircle } from "react-icons/fa";
 import { headerLinks } from "../data/headerData";
 import { toggleContext } from "../App";
 
@@ -76,10 +76,20 @@ const Header = () => {
         </ul>
       </nav>
 
-      <div className="search-container">
-        <Link to={"/search"} className="search">
-          <FaSearch />
-        </Link>
+      <div className="utils-container">
+        <div className="login-container">
+          <Link to={"/login"} className="login">
+            <span>
+              <FaUserCircle />
+            </span>
+            <p>LOGIN</p>
+          </Link>
+        </div>
+        <div className="search-container">
+          <Link to={"/search"} className="search">
+            <FaSearch />
+          </Link>
+        </div>
       </div>
     </header>
   );

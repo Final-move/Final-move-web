@@ -689,10 +689,38 @@ header .nav-toggle {
   font-size: 1.5rem;
   font-weight: 500;
 }
-header .search-container .search {
+header .utils-container {
+  display: flex;
+  align-items: center;
+}
+header .utils-container .search-container .search {
   color: var(--primary-clr-yellow-100);
   font-size: 1.5rem;
   font-weight: 500;
+}
+header .utils-container .login-container {
+  margin-right: 2em;
+}
+header .utils-container .login-container .login {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  color: var(--primary-clr-yellow-100);
+  border: 2px solid var(--primary-clr-yellow-100);
+  padding: 0.3em 0.5em;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+header .utils-container .login-container .login p {
+  font-size: 1rem;
+}
+header .utils-container .login-container .login svg {
+  margin-right: 5px;
+}
+header .utils-container .login-container .login:hover {
+  background: var(--primary-clr-dark-100);
+  color: var(--primary-clr-yellow-100);
+  border: 2px solid transparent;
 }
 header .nav-links {
   display: flex;
@@ -765,6 +793,18 @@ header .nav-links li a:hover::before {
     display: none;
   }
   .header nav .nav-links li a::before {
+    display: none;
+  }
+  .header .utils-container .login-container {
+    display: none;
+  }
+  .header .utils-container .login-container .login {
+    display: none;
+  }
+  .header .utils-container .login-container .login p {
+    display: none;
+  }
+  .header .utils-container .login-container .login svg {
     display: none;
   }
 }
