@@ -117,8 +117,9 @@ header {
 }
 
 .fixed-nav {
-  position: fixed;
+  position: sticky;
   top: 0;
+  right: 0;
   box-shadow: var(--header-box-shadow);
   transition: all 700ms ease;
 }
