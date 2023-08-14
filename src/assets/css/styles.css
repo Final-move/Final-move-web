@@ -119,8 +119,6 @@ html {
 
 body {
   width: 100%;
-  max-width: 1440px;
-  margin: auto;
   min-height: 100vh;
   font-family: opensans;
   scroll-behavior: smooth;
@@ -168,6 +166,7 @@ html {
 
 .page-container {
   padding-inline: 7%;
+  margin-inline: auto;
 }
 
 @media (max-width: 750px) {
@@ -342,13 +341,15 @@ html {
   padding-inline: 0.5em;
 }
 .login-section .container .form .remember-container .remember label {
+  display: flex;
+  align-items: center;
   font-size: 1rem;
   font-weight: 500;
   color: var(--text-clr-light);
 }
 .login-section .container .form .remember-container .remember label .remember-btn {
-  width: 1em;
-  height: 1em;
+  width: 1rem;
+  height: 1rem;
   margin-right: 5px;
 }
 .login-section .container .form .remember-container .forgot p a {
@@ -517,13 +518,15 @@ html {
   padding-inline: 0.5em;
 }
 .signup-section .container .form .remember-container .remember label {
+  display: flex;
+  align-items: center;
   font-size: 1rem;
   font-weight: 500;
   color: var(--text-clr-light);
 }
 .signup-section .container .form .remember-container .remember label .remember-btn {
-  width: 1em;
-  height: 1em;
+  width: 1rem;
+  height: 1rem;
   margin-right: 5px;
 }
 .signup-section .container .form .remember-container .remember label a {
@@ -646,6 +649,8 @@ html {
 }
 .app {
   width: 100%;
+  max-width: 1440px;
+  margin-inline: auto;
   height: 100vh;
   display: grid;
   grid-auto-flow: column;

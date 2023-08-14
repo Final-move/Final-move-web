@@ -2,6 +2,7 @@
 
 .page-container {
   padding-inline: 7%;
+  margin-inline: auto;
 }
 
 @include u.breakpoint(mobile-nav) {

@@ -3,6 +3,8 @@
 .app {
   // position: relative;
   width: 100%;
+  max-width: 1440px;
+  margin-inline: auto;
   height: 100vh;
   display: grid;
   grid-auto-flow: column;
