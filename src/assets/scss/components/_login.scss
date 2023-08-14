@@ -119,15 +119,13 @@
 
         .remember {
           label {
-            display: flex;
-            align-items: center;
             font-size: u.$fs-100;
             font-weight: u.$fw-500;
             color: var(--text-clr-light);
 
             .remember-btn {
-              width: 1rem;
-              height: 1rem;
+              width: 0.7em;
+              height: 0.7em;
               margin-right: 5px;
             }
           }
