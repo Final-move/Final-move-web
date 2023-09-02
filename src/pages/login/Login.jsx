@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import PageContainer from "./PageContainer";
-import Img from "./optimization/Img";
-import Logo from "../assets/media/images/logo/final move logo.jpg";
+import { PageContainer } from "../../components/general";
+import Img from "../../components/optimization/Img";
+import { images } from "../../utils/constant";
 import { Link } from "react-router-dom";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 
@@ -29,7 +29,7 @@ const Login = () => {
       <div className="container">
         <div className="head">
           <Img
-            src={Logo}
+            src={images.logo}
             alt={`sign fireman ministry logo`}
             className={`logo`}
           />

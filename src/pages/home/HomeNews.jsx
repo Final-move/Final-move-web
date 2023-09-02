@@ -1,5 +1,5 @@
 import React from "react";
-import PageContainer from "../../components/PageContainer";
+import { PageContainer } from "../../components/general";
 import NewsCard from "../../components/NewsCard";
 import AsideNewsGard from "../../components/AsideNewsGard";
 

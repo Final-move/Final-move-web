@@ -2,8 +2,8 @@ import React, { useContext, useState } from "react";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FaBars, FaSearch, FaTimes, FaUserCircle } from "react-icons/fa";
-import { headerLinks } from "../data/headerData";
-import { toggleContext } from "../App";
+import { toggleContext } from "../../App";
+import NavLinks from "./inn/NavLinks";
 
 const Header = () => {
   const { isExpanded, setIsExpanded, scrollMainContentRef } =
@@ -63,17 +63,7 @@ const Header = () => {
       </div>
 
       <nav className="primary-nav">
-        <ul className={`nav-links`}>
-          {headerLinks.map((link, index) => {
-            return (
-              <li key={index}>
-                <Link to={link.path} onClick={closeMobileNav}>
-                  {link.name}
-                </Link>
-              </li>
-            );
-          })}
-        </ul>
+        <NavLinks className={`nav-links`} closeMobileNav={closeMobileNav} />
       </nav>
 
       <div className="utils-container">

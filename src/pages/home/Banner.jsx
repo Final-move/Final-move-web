@@ -1,5 +1,5 @@
 import React from "react";
-import PageContainer from "../../components/PageContainer";
+import { PageContainer } from "../../components/general";
 import HealthCard from "./inn/HealthCard";
 import ComingEventCard from "./inn/ComingEventCard";
 import Carousel from "./inn/Carousel";

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import PageContainer from "./PageContainer";
+import { PageContainer } from "../../components/general";
 import PhoneNumberInput from "./inn/PhoneNumberInput";
-import Img from "./optimization/Img";
-import Logo from "../assets/media/images/logo/final move logo.jpg";
+import Img from "../../components/optimization/Img";
+import { images } from "../../utils/constant";
 import { Link } from "react-router-dom";
 import "react-phone-number-input/style.css";
 import PasswordInput from "./inn/PasswordInput";
@@ -29,7 +29,7 @@ const Signup = () => {
       <div className="container">
         <div className="head">
           <Img
-            src={Logo}
+            src={images.logo}
             alt={`sign fireman ministry logo`}
             className={`logo`}
           />

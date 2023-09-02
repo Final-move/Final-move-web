@@ -1,16 +1,16 @@
 import React, { useRef, useState } from "react";
 import { Routes, Route } from "react-router";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import Home from "./pages/home/Page";
-import About from "./pages/about/Page";
-import Resources from "./pages/resources/Page";
-import Contact from "./pages/contact/Page";
-import Search from "./pages/search/Page";
-import Login from "./components/Login";
-import MobileNav from "./components/MobileNav";
-import Signup from "./components/Signup";
-import Blog from "./pages/blog/Page";
+import { Header, Footer, MobileNav } from "./components/general";
+import {
+  Home,
+  About,
+  Blog,
+  Resources,
+  Contact,
+  Search,
+  Login,
+  Signup,
+} from "./pages";
 import BlogArticle from "./pages/blog/blogArticle/Page";
 
 export const toggleContext = React.createContext();
