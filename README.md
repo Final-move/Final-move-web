@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+Development/Preview Deployment : https://hochela.vercel.app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Hosting Platform : Vercel
 
-## Available Scripts
+Current development branch : main
 
-In the project directory, you can run:
+Framework
+REACT JS
+Styling
+Scss (core)
+Tailwind CSS 
+State Management
+Context API
+Major Dependencies & Libraries
+React-icons - For dynamic icons (https://react-icons.github.io/react-icons/)
+React-iconly - For dynamic icons (https://react-iconly.jrgarciadev.com/)
+Lucide-React - For dynamic icons (https://lucide.dev)
+React-Slick - For sliding animation (https://react-slick.neostack.com/docs/get-started)
+Always try to minimize dependencies usage and write custom componenents, please feel free to create any custom functions that can replace some of these dependencies.
 
-### `yarn start`
+Dev. & Package Manager
+Yarn
+VsCode - Coding Editor
+How to Contribute
+Clone to your PC
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Pre-requisites: Yarn, NPM, NEXT JS, React - Ensure you have these installed on your PC
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+run yarn install to install all dependencies
 
-### `yarn test`
+run yarn start to startup the server
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+For now, the most recent branch is the latest branch. Switch to the branch and then checkout to a new branch in this format name/task e.g git checkout imsigne029/blog-card where insigne029 is the name and blog is the task you want to work on or the bug you want to fix.
 
-### `yarn build`
+Run yarn run lint to get rid of any linting errors before pushing, otherwise it won't get deployed
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+When you are done developing, Open a PR to the dev branch or your branch on the main repo and request a review from finalmove.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Your code will be tested and reviewed. When valid, it'll be pulled into a branch that will be used for the next production deployment. This might not necessarily be the main branch and it will be deployed.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Style Guides
+All components should be in the components folder, end with .jsx and the follow the naming convention. 
+check the component folder structure to better understand
+Create all contexts in the context folder.
+Put all hooks in the hooks folder
+Put all reusable functions in the utils folder
+All pages should be lowercase and separated by hyphen if a single word cannot describe. Ideally a single word should describe a page
+Accessibility
+Minimize the use of divs and rather use appropriate html tags if it exists
+Use titles, labels and appropriate aria labels in components
