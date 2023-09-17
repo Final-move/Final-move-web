@@ -1,4 +1,4 @@
-Development/Preview Deployment : https://signfiremanofficial.nwtlify.app
+Development/Preview Deployment : https://signfiremanofficial.netlify.app
 
 Hosting Platform : Vercel
 
