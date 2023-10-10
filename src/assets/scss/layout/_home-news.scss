@@ -17,6 +17,10 @@
 
   .home-aside-news {
     grid-column: 2 / span 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1em;
   }
 }
 

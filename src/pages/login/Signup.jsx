@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { PageContainer } from "../../components/general";
 import PhoneNumberInput from "./inn/PhoneNumberInput";
 import Img from "../../components/optimization/Img";
-import { images } from "../../utils/constant";
+import { images } from "../../data/constant";
 import { Link } from "react-router-dom";
 import "react-phone-number-input/style.css";
 import PasswordInput from "./inn/PasswordInput";

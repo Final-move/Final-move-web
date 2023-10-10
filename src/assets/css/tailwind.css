@@ -1,8 +1,8 @@
-/* @font-face {
-    font-family: "franklin";
-    src: url("../fonts/Libre_Franklin/LibreFranklin-VariableFont_wght.ttf");
-  } */
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "opensans";
+  src: url("../fonts/opensans/OpenSans-VariableFont_wdth\,wght.ttf");
+}

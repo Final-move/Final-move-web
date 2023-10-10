@@ -12,7 +12,7 @@ const Img = ({ src, alt, className }) => {
 
     const options = {
       root: null,
-      threshold: 0.5,
+      threshold: 0.7,
       rootmargin: "0px",
       delay: 100,
     };

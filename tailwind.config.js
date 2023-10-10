@@ -3,7 +3,7 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     fontFamily: {
-      franklin: ["franklin", "sans-serif"],
+      opensans: ["opensans", "sans-serif"],
     },
     extend: {
       colors: {

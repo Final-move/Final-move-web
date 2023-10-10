@@ -20,7 +20,7 @@ const App = () => {
   const scrollMainContentRef = useRef(null);
 
   return (
-    <div className="app">
+    <div className="app font-opensans">
       <toggleContext.Provider
         value={{ isExpanded, setIsExpanded, scrollMainContentRef }}
       >

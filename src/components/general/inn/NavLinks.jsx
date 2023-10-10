@@ -1,5 +1,5 @@
 import React from "react";
-import { pageLinks } from "../../../utils/constant";
+import { pageLinks } from "../../../data/constant";
 import { Link } from "react-router-dom";
 
 const NavLinks = ({ className, Links, path, closeMobileNav }) => {

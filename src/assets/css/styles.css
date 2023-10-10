@@ -47,7 +47,8 @@ body {
 }
 
 a:not([class]) {
-  text-decoration-skip-ink: auto;
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
 }
 
 a {
@@ -58,7 +59,9 @@ button {
   background: transparent;
   outline: transparent;
   border: none;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   cursor: pointer;
 }
 
@@ -172,31 +175,6 @@ html {
 @media (max-width: 750px) {
   .page-container {
     padding-inline: 1em;
-  }
-}
-.loader-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-}
-
-.loader {
-  border: 4px solid var(--card-border-clr);
-  border-top: 4px solid var(--primary-clr-yellow-100);
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  animation: spin 1s linear infinite;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
   }
 }
 .not-found-container {
@@ -406,7 +384,8 @@ html {
   grid-template-columns: 1fr 1fr;
   justify-content: space-between;
   align-items: center;
-  column-gap: 1em;
+  -moz-column-gap: 1em;
+       column-gap: 1em;
 }
 .signup-section .container .form .phonenumber .PhoneInputCountryIconImg {
   color: var(--primary-clr-yellow-100);
@@ -590,8 +569,10 @@ html {
 .post-card__link .post-content .head .img-container .img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   transition: transform 250ms ease;
 }
 .post-card__link .post-content .head .img-container .img:hover {
@@ -871,8 +852,10 @@ header .nav-links li a:hover::before {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 .mobile-nav .container .head .login-container a {
   color: var(--primary-clr-yellow-100);
@@ -989,8 +972,10 @@ header .nav-links li a:hover::before {
 .banner-section .container .aside-banner .aside-upcoming .container .img-container .img {
   width: 100%;
   height: 100%;
-  object-position: center;
-  object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .banner-section .container .aside-banner .aside-upcoming .container .content-container {
   grid-column: 1/4;
@@ -1058,8 +1043,10 @@ header .nav-links li a:hover::before {
 .banner-section .container .aside-banner .aside-health .container .img-container .img {
   width: 100%;
   height: 100%;
-  object-position: center;
-  object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .banner-section .container .aside-banner .aside-health .container .content-container {
   grid-column: 1/4;
@@ -1176,6 +1163,7 @@ header .nav-links li a:hover::before {
   height: 100%;
 }
 .carousel .carousel-container .slides {
+  background: var(--text-clr-dark);
   position: absolute;
   width: 100%;
   height: 100%;
@@ -1186,8 +1174,10 @@ header .nav-links li a:hover::before {
 .carousel .carousel-container .slides .image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
 }
 .carousel .carousel-container .slides .image:hover {
   transform: scale(1.1);
@@ -1255,6 +1245,10 @@ header .nav-links li a:hover::before {
 }
 .homeNews-section .home-aside-news {
   grid-column: 2/span 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1em;
 }
 
 @media (max-width: 850px) {

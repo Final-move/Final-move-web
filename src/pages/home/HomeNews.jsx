@@ -1,7 +1,6 @@
 import React from "react";
 import { PageContainer } from "../../components/general";
-import NewsCard from "../../components/NewsCard";
-import AsideNewsGard from "../../components/AsideNewsGard";
+import { NewsCard, AsideCard } from "../../components";
 
 const BannerNews = () => {
   return (
@@ -15,10 +14,10 @@ const BannerNews = () => {
         <NewsCard />
       </section>
       <aside className="home-aside-news">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
-        necessitatibus reprehenderit tempore reiciendis adipisci explicabo
-        cumque, quod corporis temporibus perferendis?
-        <AsideNewsGard />
+        <AsideCard />
+        <AsideCard />
+        <AsideCard />
+        <AsideCard />
       </aside>
     </PageContainer>
   );

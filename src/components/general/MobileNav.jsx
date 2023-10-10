@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { userData } from "../../data/userData";
 import { toggleContext } from "../../App";
 import NavLinks from "./inn/NavLinks";
-import { mobileNavSocialLinks } from "../../utils/constant";
+import { mobileNavSocialLinks } from "../../data/constant";
 
 const MobileNav = () => {
   const { isExpanded, setIsExpanded } = useContext(toggleContext);

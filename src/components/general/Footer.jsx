@@ -6,7 +6,7 @@ import {
   footerSocialLinks,
   images,
   pageLinks,
-} from "../../utils/constant";
+} from "../../data/constant";
 
 const Footer = () => {
   const date = new Date().getFullYear();

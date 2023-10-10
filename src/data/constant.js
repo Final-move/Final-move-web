@@ -45,34 +45,7 @@ export const pageLinks = [
   },
 ];
 
-export const mobileNavSocialLinks = [
-  {
-    id: 1,
-    icon: <FaFacebookF />,
-    link: "/",
-    label: "Facebook",
-  },
-  {
-    id: 2,
-    icon: <FaInstagram />,
-    link: "/",
-    label: "Instagram",
-  },
-  {
-    id: 3,
-    icon: <FaWhatsapp />,
-    link: "/",
-    label: "Whatsapp",
-  },
-  {
-    id: 3,
-    icon: <FaTiktok />,
-    link: "/",
-    label: "Tiktok",
-  },
-];
-
-export const contacts = {
+export const contactLinks = {
   email: "info@signfireman.com",
   mobileNumber: "+(234) 8100000011",
   address: "Lagos, Nigeria",
@@ -83,19 +56,54 @@ export const footerContact = [
     id: 1,
     icon: "",
     url: "/",
-    text: contacts.email,
+    text: contactLinks.email,
   },
   {
     id: 2,
     icon: "",
     url: "/",
-    text: contacts.mobileNumber,
+    text: contactLinks.mobileNumber,
   },
   {
     id: 3,
     icon: "",
     url: "/",
-    text: contacts.address,
+    text: contactLinks.address,
+  },
+];
+
+export const socialLinks = {
+  facebook: `/`,
+  instagram: `/`,
+  whatsapp: `/`,
+  tiktok: `/`,
+  twitter: `/`,
+};
+
+export const mobileNavSocialLinks = [
+  {
+    id: 1,
+    icon: <FaFacebookF />,
+    link: socialLinks.facebook,
+    label: "Facebook",
+  },
+  {
+    id: 2,
+    icon: <FaInstagram />,
+    link: socialLinks.instagram,
+    label: "Instagram",
+  },
+  {
+    id: 3,
+    icon: <FaWhatsapp />,
+    link: socialLinks.whatsapp,
+    label: "Whatsapp",
+  },
+  {
+    id: 3,
+    icon: <FaTiktok />,
+    link: socialLinks.tiktok,
+    label: "Tiktok",
   },
 ];
 
@@ -103,19 +111,19 @@ export const footerSocialLinks = [
   {
     id: 1,
     icon: <FaFacebookSquare />,
-    link: "/",
+    link: socialLinks.facebook,
     label: "Facebook",
   },
   {
     id: 2,
     icon: <FaInstagramSquare />,
-    link: "/",
+    link: socialLinks.instagram,
     label: "Instagram",
   },
   {
     id: 3,
     icon: <FaWhatsappSquare />,
-    link: "/",
+    link: socialLinks.whatsapp,
     label: "Whatsapp",
   },
 ];
