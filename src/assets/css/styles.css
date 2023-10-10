@@ -1253,7 +1253,7 @@ header .nav-links li a:hover::before {
 
 @media (max-width: 850px) {
   .homeNews-section {
-    grid-template-columns: 5em;
+    grid-template-columns: 5fr;
   }
   .homeNews-section .home-main-news {
     grid-column: 1/3;

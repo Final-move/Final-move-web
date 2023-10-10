@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const AsideNewsCard = () => {
   return (
-    <Link className="w-full h-48 rounded-lg flex justify-between items-start shadow">
+    <Link className="w-full h-40 rounded-lg flex justify-between items-start shadow-md">
       <div className="w-3/6 h-full">
         <img
           src={img}
