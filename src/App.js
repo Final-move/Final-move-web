@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import { Routes, Route } from "react-router";
-import { Header, Footer, MobileNav } from "./components/general";
+import { Header, Footer, MobileNav, NotFound } from "./components/general";
 import {
   Home,
   About,
@@ -45,6 +45,7 @@ const App = () => {
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/forgotpassword" element={<Signup />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
 
         <Footer />

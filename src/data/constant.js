@@ -1,4 +1,6 @@
 import LogoImage from "../assets/media/images/logo/final move logo.jpg";
+import errorImg from "../assets/media/images/404-anime.json";
+
 import {
   FaInstagramSquare,
   FaInstagram,
@@ -130,4 +132,5 @@ export const footerSocialLinks = [
 
 export const images = {
   logo: LogoImage,
+  errorAnime: errorImg,
 };
