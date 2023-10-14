@@ -5,13 +5,13 @@ import {
   Home,
   About,
   Blog,
+  BlogArticle,
   Resources,
   Contact,
   Search,
   Login,
   Signup,
 } from "./pages";
-import BlogArticle from "./pages/blog/blogArticle/Page";
 
 export const toggleContext = React.createContext();
 
