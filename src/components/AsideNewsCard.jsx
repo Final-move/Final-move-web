@@ -6,14 +6,14 @@ import Img from "./optimization/Img";
 const AsideNewsCard = () => {
   return (
     <Link className="w-full h-44 p-1 rounded-lg flex justify-between items-start shadow-md overflow-hidden">
-      <div className="w-3/6 h-full">
+      <div className="w-3/6 h-full rounded-s overflow-hidden">
         <Img
           src={img}
           alt="blog post"
           className="w-full h-full object-cover object-center"
         />
       </div>
-      <article className="h-full flex flex-col justify-between">
+      <article className="h-full flex flex-col justify-between p-2">
         <p className="text-base font-medium text-black">
           THE TIME HAS COME FOR YOU TO BE VERY RICH!
         </p>
