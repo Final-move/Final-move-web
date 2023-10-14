@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const HomeContact = () => {
   return (
     <PageContainer
-      className={"py-20 w-full flex justify-center items-center bg-white"}
+      className={"py-20 w-full flex justify-center items-center bg-yellow-400"}
     >
       <div className="w-full flex flex-col items-center gap-4">
         <p className="text-2xl text-black text-center">

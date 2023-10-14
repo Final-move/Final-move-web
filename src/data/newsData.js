@@ -3,8 +3,9 @@ import img2 from "../assets/media/images/miracle child.jpg";
 import img3 from "../assets/media/images/abdominal surgery.jpg";
 import img4 from "../assets/media/images/naomi-adamu.jpg";
 import recent1 from "../assets/media/images/very rich.jpg";
+import recent2 from "../assets/media/images/first-october.jpg";
 
-export const mainNews = [
+export const latestNews = [
   {
     id: 1,
     imgUrl: img1,
@@ -97,11 +98,17 @@ export const rencentNews = [
   {
     id: 1,
     imgUrl: recent1,
-    tag: `Testimony`,
+    tag: `Prophecy`,
     date: `August 21, 2017`,
-    title: "Breaking News 2",
-    article: `before studying how to do it, let us first of all study how it
-    will not work. often, learning how something does not work helps
-    people not to waste their time on what will not work`,
+    title: "Very Rich",
+    article: `The time has come for you to be very rich!`,
+  },
+  {
+    id: 2,
+    imgUrl: recent2,
+    tag: `Prophecy`,
+    date: `August 21, 2017`,
+    title: "Welcome To October 2023",
+    article: `This month is the month that God will surprise you with your greatest breakthrough! HAPPY NEW MONTH!`,
   },
 ];

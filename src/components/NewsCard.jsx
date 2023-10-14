@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Img from "./optimization/Img";
 
-const NewsCard = ({ index, id, imgUrl, tag, date, title, article }) => {
+const NewsCard = ({ id, imgUrl, tag, date, title, article }) => {
   return (
     <section className="w-full h-[450px] bg-white rounded-lg shadow-md p-2 overflow-hidden">
       <Link to={`blog/article/${id}`} className="text-black">
