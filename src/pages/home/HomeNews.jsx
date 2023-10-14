@@ -1,7 +1,7 @@
 import React from "react";
 import { PageContainer } from "../../components/general";
 import { NewsCard, AsideCard } from "../../components";
-import { latestNews } from "../../data/newsData";
+import { latestNews, rencentNews } from "../../data/newsData";
 
 const BannerNews = () => {
   return (
@@ -12,10 +12,9 @@ const BannerNews = () => {
         ))}
       </section>
       <aside className="home-aside-news">
-        <AsideCard />
-        <AsideCard />
-        <AsideCard />
-        <AsideCard />
+        {rencentNews.map((data, index) => (
+          <AsideCard {...data} key={index} />
+        ))}
       </aside>
     </PageContainer>
   );

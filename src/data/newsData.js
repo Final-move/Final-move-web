@@ -4,6 +4,9 @@ import img3 from "../assets/media/images/abdominal surgery.jpg";
 import img4 from "../assets/media/images/naomi-adamu.jpg";
 import recent1 from "../assets/media/images/very rich.jpg";
 import recent2 from "../assets/media/images/first-october.jpg";
+import recent3 from "../assets/media/images/cripples healed.jpg";
+import recent4 from "../assets/media/images/july-healed-of-kidney-disease.jpg";
+import recent5 from "../assets/media/images/uk-programming-miracle.jpg";
 
 export const latestNews = [
   {
@@ -110,5 +113,29 @@ export const rencentNews = [
     date: `August 21, 2017`,
     title: "Welcome To October 2023",
     article: `This month is the month that God will surprise you with your greatest breakthrough! HAPPY NEW MONTH!`,
+  },
+  {
+    id: 3,
+    imgUrl: recent3,
+    tag: `Prophecy`,
+    date: `August 21, 2017`,
+    title: "CRIPPLES HEALED!",
+    article: `CRIPPLES HEALED! RECEIVE YOUR OWN MIRACLE!`,
+  },
+  {
+    id: 4,
+    imgUrl: recent4,
+    tag: `Testimony`,
+    date: `August 21, 2017`,
+    title: "The Miracle Power Of God",
+    article: `God used the man of God Sign Fireman to heal me of a very bad kidney condition and raise my father from the dead!`,
+  },
+  {
+    id: 5,
+    imgUrl: recent5,
+    tag: `Programming`,
+    date: `August 21, 2017`,
+    title: "Migration To Uk After Programming",
+    article: `By the prophetic 'programming' of Sign Fireman, in spite of no job and no money, in 4 weeks, my daughter moved to the UK!`,
   },
 ];

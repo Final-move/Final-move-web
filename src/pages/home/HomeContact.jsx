@@ -1,5 +1,5 @@
 import React from "react";
-import { PageContainer } from "../../components/general";
+import { PageContainer, SectionHeader } from "../../components/general";
 import { Link } from "react-router-dom";
 
 const HomeContact = () => {
@@ -8,9 +8,9 @@ const HomeContact = () => {
       className={"py-20 w-full flex justify-center items-center bg-yellow-400"}
     >
       <div className="w-full flex flex-col items-center gap-4">
-        <p className="text-2xl text-black text-center">
-          We're here to help and connect with you in any way we can.
-        </p>
+        <SectionHeader
+          title={"We're here to help and connect with you in any way we can"}
+        />
 
         <Link
           to={"/contact"}

@@ -20,7 +20,7 @@ const NewsCard = ({ id, imgUrl, tag, date, title, article }) => {
           </div>
           <div className="w-full h-full flex flex-col justify-between gap-2 mb-2">
             <p className="text-black text-lg font-medium">
-              {article.length > 195 ? `${article.slice(0, 195)}...` : article}
+              {article.length > 195 ? `${article.slice(0, 192)}...` : article}
             </p>
             <p className="text-base font-medium text-yellow-500 underline">
               Read more
