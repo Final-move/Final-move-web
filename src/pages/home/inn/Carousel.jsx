@@ -82,8 +82,8 @@ const Carousel = () => {
               <img src={data.imgUrl} alt="" className="image" />
               <div className="slides-content">
                 <h3>
-                  {data.title.length > 131
-                    ? data.title.slice(0, 130) + "..."
+                  {data.title.length > 121
+                    ? data.title.slice(0, 120) + "..."
                     : data.title}
                 </h3>
               </div>
