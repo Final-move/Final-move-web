@@ -1,11 +1,16 @@
 import React from "react";
+import Img from "./optimization/Img";
 import img from "../assets/media/images/very rich.jpg";
 import { Link } from "react-router-dom";
-import Img from "./optimization/Img";
 
 const AsideNewsCard = () => {
+  const id = 10;
+
   return (
-    <Link className="w-full h-44 p-1 rounded-lg flex justify-between items-start shadow-md overflow-hidden">
+    <Link
+      to={`blog/article/${id}`}
+      className="w-full h-44 p-1 rounded-lg flex justify-between items-start shadow-md overflow-hidden"
+    >
       <div className="w-3/6 h-full rounded-s overflow-hidden">
         <Img
           src={img}
@@ -17,7 +22,7 @@ const AsideNewsCard = () => {
         <p className="text-base font-medium text-black">
           THE TIME HAS COME FOR YOU TO BE VERY RICH!
         </p>
-        <div className="w-full flex items-center gap-4 text-sm font-medium text-yellow-500">
+        <div className="w-full flex items-center gap-3 text-sm font-medium text-yellow-500">
           <p className="py-1 px-2 text-yellow-500 bg-black rounded">
             Testimony
           </p>
