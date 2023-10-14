@@ -7,8 +7,8 @@ const HomeContact = () => {
     <PageContainer
       className={"py-20 w-full flex justify-center items-center bg-white"}
     >
-      <div className="w-full grid gap-2">
-        <p className="text-xl text-black text-center">
+      <div className="w-full flex flex-col items-center gap-4">
+        <p className="text-2xl text-black text-center">
           We're here to help and connect with you in any way we can.
         </p>
 

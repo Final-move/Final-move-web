@@ -5,7 +5,7 @@ import Img from "./optimization/Img";
 
 const AsideNewsCard = () => {
   return (
-    <Link className="w-full h-40 rounded-lg flex justify-between items-start shadow-md overflow-hidden">
+    <Link className="w-full h-44 p-1 rounded-lg flex justify-between items-start shadow-md overflow-hidden">
       <div className="w-3/6 h-full">
         <Img
           src={img}
@@ -13,11 +13,16 @@ const AsideNewsCard = () => {
           className="w-full h-full object-cover object-center"
         />
       </div>
-      <article className="h-full p-2 flex flex-col justify-between">
-        <h3 className="text-base font-semibold text-black">
+      <article className="h-full flex flex-col justify-between">
+        <p className="text-base font-medium text-black">
           THE TIME HAS COME FOR YOU TO BE VERY RICH!
-        </h3>
-        <p className="text-sm font-medium text-black">october 28 2022</p>
+        </p>
+        <div className="w-full flex items-center gap-4 text-sm font-medium text-yellow-500">
+          <p className="py-1 px-2 text-yellow-500 bg-black rounded">
+            Testimony
+          </p>
+          <p>August 21, 2017</p>
+        </div>
       </article>
     </Link>
   );

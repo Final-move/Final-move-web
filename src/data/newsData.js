@@ -1,18 +1,28 @@
-import img from "../assets/media/images/special-teaching.jpg";
+import img1 from "../assets/media/images/special-teaching.jpg";
+import recent1 from "../assets/media/images/very rich.jpg";
 
-export const newsList = [
+export const mainNews = [
   {
     id: 1,
-    title: "Breaking News 1",
-    imgUrl: img,
-    description: "This is the description of Breaking News 1.",
-    content: "The full content of Breaking News 1 goes here...",
-  },
-  {
-    id: 2,
+    imgUrl: img1,
+    tag: `Testimony`,
+    Date: `August 21, 2017`,
     title: "Breaking News 2",
-    imgUrl: img,
-    description: "This is the description of Breaking News 2.",
-    content: "The full content of Breaking News 2 goes here...",
+    article: `Before studying how to do it, let us first of all study how it
+    will not work. often, learning how something does not work helps
+    people not to waste their time on what will not work`,
+  },
+];
+
+export const rencentNews = [
+  {
+    id: 1,
+    imgUrl: recent1,
+    tag: `Testimony`,
+    Date: `August 21, 2017`,
+    title: "Breaking News 2",
+    article: `before studying how to do it, let us first of all study how it
+    will not work. often, learning how something does not work helps
+    people not to waste their time on what will not work`,
   },
 ];
