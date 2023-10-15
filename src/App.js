@@ -12,6 +12,7 @@ import {
   Login,
   Signup,
 } from "./pages";
+import { routeName } from "./data/constant";
 
 export const toggleContext = React.createContext();
 
@@ -35,13 +36,13 @@ const App = () => {
         </toggleContext.Provider>
 
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/blog/article/:id" element={<BlogArticle />} />
-          <Route path="/resources" element={<Resources />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/search" element={<Search />} />
+          <Route path={routeName.home} element={<Home />} />
+          <Route path={routeName.about} element={<About />} />
+          <Route path={routeName.blog} element={<Blog />} />
+          <Route path={routeName.blogArticle} element={<BlogArticle />} />
+          <Route path={routeName.resources} element={<Resources />} />
+          <Route path={routeName.contact} element={<Contact />} />
+          <Route path={routeName.search} element={<Search />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/forgotpassword" element={<Signup />} />

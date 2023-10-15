@@ -17,8 +17,10 @@ export const routeName = {
   home: "/",
   about: "/about",
   blog: "/blog",
+  blogArticle: "/blog/article/:id",
   resources: "/resources",
   contact: "/contact",
+  search: "/search",
 };
 
 export const pageLinks = [

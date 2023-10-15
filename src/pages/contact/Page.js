@@ -1,11 +1,12 @@
 import React from "react";
-import NotFound from "../../components/general/NotFound";
+import { PageContainer } from "../../components/general";
+import { PageBanner } from "../../components";
 
 const Contact = () => {
   return (
-    <div>
-      <NotFound />
-    </div>
+    <PageContainer>
+      <PageBanner title={"CONTACT US"} bgImg={"bg-contact-banner"} />
+    </PageContainer>
   );
 };
 

@@ -1,11 +1,12 @@
 import React from "react";
 import NotFound from "../../components/general/NotFound";
+import { PageContainer } from "../../components/general";
 
 const About = () => {
   return (
-    <div>
+    <PageContainer>
       <NotFound />
-    </div>
+    </PageContainer>
   );
 };
 
