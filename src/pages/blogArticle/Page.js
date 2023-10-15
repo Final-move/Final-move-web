@@ -1,21 +1,21 @@
-// import React, { useState } from "react";
-// import { useParams } from "react-router";
-// import { NotFound } from "../../components/general";
+import React, { useState } from "react";
+import { useParams } from "react-router";
+import { NotFound } from "../../components/general";
 
-// const BlogArticle = () => {
-//   const params = useParams();
-//   const { id } = params;
-//   const [article, setArticle] = useState(null);
+const BlogArticle = () => {
+  const params = useParams();
+  const { id } = params;
+  const [article, setArticle] = useState(null);
 
-//   if (!article) {
-//     return (
-//       <>
-//         <NotFound />
-//       </>
-//     );
-//   }
+  if (!article) {
+    return (
+      <>
+        <NotFound />
+      </>
+    );
+  }
 
-//   return <></>;
-// };
+  return <></>;
+};
 
-// export default BlogArticle;
+export default BlogArticle;
