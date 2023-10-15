@@ -11,8 +11,8 @@ const SearchContents = () => {
         <label
           className={
             search
-              ? `text-xl font-normal bg-transparent text-yellow-500 absolute left-8`
-              : `hidden`
+              ? `hidden`
+              : `text-xl font-normal bg-transparent text-yellow-500 absolute left-8`
           }
         >
           Search

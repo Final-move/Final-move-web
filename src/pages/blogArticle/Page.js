@@ -1,21 +1,31 @@
 // import React, { useState } from "react";
-// import { useParams } from "react-router";
-// import { NotFound } from "../../components/general";
+import { useParams } from "react-router";
+import { NotFound, PageContainer } from "../../components/general";
+import { latestNews } from "../../data/newsData";
+import Img from "../../components/optimization/Img";
 
-// const BlogArticle = () => {
-//   const params = useParams();
-//   const { id } = params;
-//   const [article, setArticle] = useState(null);
+const BlogArticle = () => {
+  const params = useParams();
+  const { id } = params;
+  // const [article, setArticle] = useState(null);
 
-//   if (!article) {
-//     return (
-//       <>
-//         <NotFound />
-//       </>
-//     );
-//   }
+  const data = latestNews.find((data) => data.id === id);
 
-//   return <></>;
-// };
+  if (!data) {
+    return (
+      <>
+        <NotFound />
+      </>
+    );
+  }
 
-// export default BlogArticle;
+  return (
+    <PageContainer>
+      <Img src={data.imgUrl} alt={`${data.title} image`} />
+
+      <p>{data.article}</p>
+    </PageContainer>
+  );
+};
+
+export default BlogArticle;
