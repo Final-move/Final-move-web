@@ -12,7 +12,7 @@ const SearchContents = () => {
           className={
             search
               ? `hidden`
-              : `text-xl font-normal bg-transparent text-yellow-500 absolute left-8`
+              : `text-xl font-normal bg-transparent text-yellow-500 absolute left-8 top-1/2 -translate-y-1/2`
           }
         >
           Search

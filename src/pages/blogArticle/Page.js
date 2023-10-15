@@ -9,7 +9,7 @@ const BlogArticle = () => {
   const { id } = params;
   // const [article, setArticle] = useState(null);
 
-  const data = latestNews.find((data) => data.id === id);
+  const data = latestNews.find((data) => id === data.id);
 
   if (!data) {
     return (
