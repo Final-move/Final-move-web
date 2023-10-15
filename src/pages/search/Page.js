@@ -1,11 +1,15 @@
 import React from "react";
-import NotFound from "../../components/general/NotFound";
+import SearchBanner from "./SearchBanner";
+import SearchContents from "./SearchContents";
+import { PageContainer } from "../../components/general";
 
 const Search = () => {
   return (
-    <>
-      <NotFound />
-    </>
+    <PageContainer className={"w-full min-h-screen bg-white"}>
+      <SearchBanner />
+
+      <SearchContents />
+    </PageContainer>
   );
 };
 

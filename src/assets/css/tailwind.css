@@ -6,3 +6,8 @@
   font-family: "opensans";
   src: url("../fonts/opensans/OpenSans-VariableFont_wdth\,wght.ttf");
 }
+
+@font-face {
+  font-family: "montserrat";
+  src: url("../fonts/montserrat/Montserrat-VariableFont_wght.ttf");
+}

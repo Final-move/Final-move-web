@@ -4,8 +4,14 @@ module.exports = {
   theme: {
     fontFamily: {
       opensans: ["opensans", "sans-serif"],
+      montserrat: ["montserrat", "sans-serif"],
     },
     extend: {
+      backgroundImage: {
+        "search-banner": "url('/src/assets/media/images/search-banner.jpg')",
+        "contact-banner": "url('/src/assets/media/images/contact-banner.jpg')",
+      },
+
       colors: {
         primary: {
           DEFAULT: "#56453D",
