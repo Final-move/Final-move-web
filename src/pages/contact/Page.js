@@ -4,8 +4,8 @@ import { PageBanner } from "../../components";
 
 const Contact = () => {
   return (
-    <PageContainer>
-      <PageBanner title={"CONTACT US"} bgImg={"bg-contact-banner"} />
+    <PageContainer className={"w-full min-h-screen bg-white"}>
+      <PageBanner bgImg={"bg-contact-banner"} />
     </PageContainer>
   );
 };
