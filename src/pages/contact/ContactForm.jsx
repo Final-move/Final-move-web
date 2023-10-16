@@ -3,7 +3,7 @@ import { SectionHeader } from "../../components/general";
 import { MoveRight } from "lucide-react";
 
 const ContactForm = () => {
-  const contactSubmit = (e) => e.preventDefault;
+  const contactSubmit = (e) => e.preventDefault();
 
   return (
     <form
