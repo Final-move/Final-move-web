@@ -13,6 +13,8 @@ import {
   FaTiktok,
 } from "react-icons/fa";
 
+import { Phone, MapPin, Mail } from "lucide-react";
+
 export const routeName = {
   home: "/",
   about: "/about",
@@ -56,6 +58,30 @@ export const contactLinks = {
   mobileNumber: "+(234) 8100000011",
   address: "Lagos, Nigeria",
 };
+
+export const contactPageContact = [
+  {
+    id: 1,
+    icon: <Phone />,
+    url: "/",
+    title: "PHONE",
+    label: contactLinks.mobileNumber,
+  },
+  {
+    id: 2,
+    icon: <Mail />,
+    url: "/",
+    title: "EMAIL",
+    label: contactLinks.email,
+  },
+  {
+    id: 3,
+    icon: <MapPin />,
+    url: "/",
+    title: "ADDRESS",
+    label: contactLinks.address,
+  },
+];
 
 export const footerContact = [
   {

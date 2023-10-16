@@ -1,22 +1,30 @@
 import React from "react";
+import ContactForm from "./ContactForm";
+import { contactPageContact } from "../../data/constant";
 
 const ContactSection = () => {
   return (
-    <section className="w-full grid text-black">
-      <div className="grid grid-flow-col max-md:grid-cols-1 gap-4">
-        <div className="w-full h-full grid gap-4">
-          <h3 className="font-semibold text-base">PHONE</h3>
-          <p className="text-yellow-500 font-medium text-xl">+(234)354-1234</p>
-        </div>
-        <div className="w-full h-full grid gap-4">
-          <h3 className="font-semibold text-base">ADDRESS</h3>
-          <p className="text-sm font-medium">Lagos, Nigeria</p>
-        </div>
-        <div className="w-full h-full grid gap-4">
-          <h3 className="font-semibold text-base">EMAIL</h3>
-          <p className="text-sm font-medium">info@signfireman.com</p>
-        </div>
-      </div>
+    <section className="w-full py-12 grid grid-cols-2 max-md:grid-cols-1 gap-4 text-black">
+      <section className="grid grid-cols-1 gap-4">
+        {contactPageContact.map((data, index) => (
+          <div
+            className="bg-yellow-500 w-full p-4 py-6 flex items-center gap-4"
+            key={index}
+          >
+            <p className="bg-black text-yellow-500 p-4 rounded-full">
+              {data.icon}
+            </p>
+            <div>
+              <h3 className="font-semibold text-lg">{data.title}</h3>
+              <a href={data.url} className="text-base font-medium">
+                {data.label}
+              </a>
+            </div>
+          </div>
+        ))}
+      </section>
+
+      <ContactForm />
     </section>
   );
 };
