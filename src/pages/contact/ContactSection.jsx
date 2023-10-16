@@ -3,7 +3,7 @@ import React from "react";
 const ContactSection = () => {
   return (
     <section className="w-full grid text-black">
-      <div className="grid grid-flow-col gap-4">
+      <div className="grid grid-flow-col max-md:grid-cols-1 gap-4">
         <div className="w-full h-full grid gap-4">
           <h3 className="font-semibold text-base">PHONE</h3>
           <p className="text-yellow-500 font-medium text-xl">+(234)354-1234</p>
