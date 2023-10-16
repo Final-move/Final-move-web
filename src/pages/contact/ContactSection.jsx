@@ -8,7 +8,7 @@ const ContactSection = () => {
       <section className="grid grid-cols-1 gap-4">
         {contactPageContact.map((data, index) => (
           <div
-            className="bg-yellow-500 w-full p-4 py-6 flex items-center gap-4"
+            className="bg-yellow-500 w-full p-4 flex items-center gap-4 rounded-lg"
             key={index}
           >
             <p className="bg-black text-yellow-500 p-4 rounded-full">
