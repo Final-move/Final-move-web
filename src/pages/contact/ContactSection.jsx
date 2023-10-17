@@ -5,7 +5,7 @@ import { contactPageContact } from "../../data/constant";
 const ContactSection = () => {
   return (
     <section className="w-full py-12 grid grid-cols-2 max-md:grid-cols-1 gap-4 text-black">
-      <section className="grid grid-cols-1 gap-4">
+      <section className="grid grid-cols-1 place-content-start gap-4">
         {contactPageContact.map((data, index) => (
           <div
             className="bg-yellow-500 w-full p-4 flex items-center gap-4 rounded-lg"
