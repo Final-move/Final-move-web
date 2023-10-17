@@ -12,7 +12,6 @@ const NotFound = () => {
       <div className="grid place-items-center gap-4">
         <Lottie
           animationData={images.errorAnime}
-          play
           loop
           className="w-[80%] max-w-[500px] block"
         />
