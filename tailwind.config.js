@@ -8,6 +8,7 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
+        "about-banner": "url('/src/assets/media/images/about-bg.jpg')",
         "search-banner": "url('/src/assets/media/images/search-banner.jpg')",
         "contact-banner": "url('/src/assets/media/images/contact-banner.jpg')",
       },
