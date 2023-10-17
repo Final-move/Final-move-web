@@ -11,7 +11,7 @@ const Contact = () => {
 
       <ContactSection />
 
-      <MapContainer />
+      <MapContainer className={"w-full h-[500px] py-12"} />
     </PageContainer>
   );
 };
