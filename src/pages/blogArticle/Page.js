@@ -3,10 +3,12 @@ import { useParams } from "react-router";
 import { NotFound, PageContainer } from "../../components/general";
 import ShareContainer from "./ShareContainer";
 import { latestNews } from "../../data/newsData";
+import RelatedArticle from "./RelatedArticle";
 
 const BlogArticle = () => {
   const params = useParams();
   const { id } = params;
+  const pageUrl = encodeURI(window.location.href);
 
   const article = latestNews.find((news) => news.id === parseInt(id));
 
@@ -28,9 +30,21 @@ const BlogArticle = () => {
         />
       </section>
 
-      <ShareContainer article={article} />
+      <ShareContainer article={article} pageUrl={pageUrl} />
 
-      <p>{article.article}</p>
+      <section className="grid gap-4 mt-4 mb-8">
+        <div className="mb-4">
+          <h2 className="font-montserrat text-black text-2xl font-semibold">
+            {article.title}
+          </h2>
+        </div>
+
+        <div className="text-lg text-black">
+          <p>{article.article}</p>
+        </div>
+      </section>
+
+      <RelatedArticle />
     </PageContainer>
   );
 };
