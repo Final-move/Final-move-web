@@ -11,6 +11,11 @@ module.exports = {
         "about-banner": "url('/src/assets/media/images/about-bg.jpg')",
         "search-banner": "url('/src/assets/media/images/search-banner.jpg')",
         "contact-banner": "url('/src/assets/media/images/contact-banner.jpg')",
+        "blog-banner": "url('/src/assets/media/images/blog-banner.jpg')",
+      },
+
+      gridTemplateColumns: {
+        "blog-col": "repeat(auto-fill, minmax(320px, 1fr))",
       },
 
       colors: {
