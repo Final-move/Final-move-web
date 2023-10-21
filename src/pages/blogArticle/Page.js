@@ -1,17 +1,16 @@
 // import React, { useState } from "react";
 import { useParams } from "react-router";
 import { NotFound, PageContainer } from "../../components/general";
+import ShareContainer from "./ShareContainer";
 import { latestNews } from "../../data/newsData";
-import Img from "../../components/optimization/Img";
 
 const BlogArticle = () => {
   const params = useParams();
   const { id } = params;
-  // const [article, setArticle] = useState(null);
 
-  const data = latestNews.find((data) => id === data.id);
+  const article = latestNews.find((news) => news.id === parseInt(id));
 
-  if (!data) {
+  if (!article) {
     return (
       <>
         <NotFound />
@@ -20,10 +19,18 @@ const BlogArticle = () => {
   }
 
   return (
-    <PageContainer>
-      <Img src={data.imgUrl} alt={`${data.title} image`} />
+    <PageContainer className={"bg-white text-black py-12"}>
+      <section className="w-full h-[70vh] max-h-[550px]">
+        <img
+          src={article.imgUrl}
+          alt={`${article.title} `}
+          className={"w-full h-full object-cover object-center"}
+        />
+      </section>
 
-      <p>{data.article}</p>
+      <ShareContainer article={article} />
+
+      <p>{article.article}</p>
     </PageContainer>
   );
 };
