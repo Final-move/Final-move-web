@@ -43,7 +43,7 @@ const ShareContainer = ({ article, pageUrl }) => {
       </div>
 
       <div>
-        <ul className="flex items-center gap-4 text-xl font-medium object-cover">
+        <ul className="flex items-center gap-4 text-2xl font-medium object-cover">
           <li>
             <button onClick={shareOnFacebook} className="text-blue-900">
               <FaFacebook />
