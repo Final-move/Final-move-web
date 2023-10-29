@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { SectionHeader } from "../../components/general";
+import { SectionHeader } from "../../components";
 import { MoveRight } from "lucide-react";
 
 const ContactForm = () => {

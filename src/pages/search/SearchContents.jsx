@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { PageContainer } from "../../components/general";
+import { PageContainer } from "../../components";
 import { FaSearch } from "react-icons/fa";
 
 const SearchContents = () => {

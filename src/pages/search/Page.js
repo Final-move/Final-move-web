@@ -1,7 +1,6 @@
 import React from "react";
 import SearchContents from "./SearchContents";
-import { PageContainer } from "../../components/general";
-import { PageBanner } from "../../components";
+import { PageBanner, PageContainer } from "../../components";
 
 const Search = () => {
   return (

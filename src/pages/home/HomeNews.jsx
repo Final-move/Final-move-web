@@ -1,6 +1,5 @@
 import React from "react";
-import { PageContainer } from "../../components/general";
-import { NewsCard, AsideCard } from "../../components";
+import { NewsCard, AsideCard, PageContainer } from "../../components";
 import { latestNews, rencentNews } from "../../data/newsData";
 
 const BannerNews = () => {

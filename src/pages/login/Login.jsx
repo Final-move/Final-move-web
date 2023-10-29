@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { PageContainer } from "../../components/general";
+import { PageContainer } from "../../components";
 import Img from "../../components/optimization/Img";
 import { images } from "../../data/constant";
 import { Link } from "react-router-dom";

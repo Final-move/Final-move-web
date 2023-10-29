@@ -1,6 +1,6 @@
 // import React, { useState } from "react";
 import { useParams } from "react-router";
-import { NotFound, PageContainer } from "../../components/general";
+import { NotFound, PageContainer } from "../../components";
 import ShareContainer from "./ShareContainer";
 import { latestNews } from "../../data/newsData";
 import RelatedArticle from "./RelatedArticle";

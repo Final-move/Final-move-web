@@ -1,6 +1,5 @@
 import React from "react";
-import { PageContainer } from "../../components/general";
-import { PageBanner } from "../../components";
+import { PageBanner, PageContainer } from "../../components";
 import Img from "../../components/optimization/Img";
 import img1 from "../../assets/media/images/special-teaching.jpg";
 

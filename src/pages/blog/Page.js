@@ -1,6 +1,5 @@
 import React from "react";
-import { PageBanner } from "../../components";
-import { PageContainer } from "../../components/general";
+import { PageBanner, PageContainer } from "../../components";
 import BlogNews from "./BlogNews";
 
 const Blog = () => {

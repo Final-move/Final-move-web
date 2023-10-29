@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { PageContainer } from "../../components/general";
+import { PageContainer } from "../../components";
 import PhoneNumberInput from "./inn/PhoneNumberInput";
 import Img from "../../components/optimization/Img";
 import { images } from "../../data/constant";

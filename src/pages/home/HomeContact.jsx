@@ -1,5 +1,5 @@
 import React from "react";
-import { PageContainer, SectionHeader } from "../../components/general";
+import { PageContainer, SectionHeader } from "../../components";
 import { Link } from "react-router-dom";
 
 const HomeContact = () => {

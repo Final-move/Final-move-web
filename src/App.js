@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import { Routes, Route } from "react-router";
-import { Header, Footer, MobileNav, NotFound } from "./components/general";
+import { Header, Footer, MobileNav, NotFound } from "./components";
 import {
   Home,
   About,
