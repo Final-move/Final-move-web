@@ -16,6 +16,7 @@ module.exports = {
 
       gridTemplateColumns: {
         "blog-col": "repeat(auto-fill, minmax(320px, 1fr))",
+        "blog-col-2": "repeat(auto-fill, minmax(400px, 1fr))",
       },
 
       colors: {

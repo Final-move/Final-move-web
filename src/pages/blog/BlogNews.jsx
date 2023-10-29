@@ -10,7 +10,7 @@ const BlogNews = () => {
           <NewsCard {...data} key={index} />
         ))}
       </section>
-      <aside className="w-full grid grid-cols-blog-col grid-rows-3 overflow-scroll">
+      <aside className="w-full grid grid-cols-blog-col max-[550px]:grid-cols-1 overflow-x-scroll">
         {rencentNews.map((data, index) => (
           <AsideCard {...data} key={index} />
         ))}
