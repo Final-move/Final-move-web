@@ -5,7 +5,7 @@ import Img from "./optimization/Img";
 const NewsCard = ({ id, imgUrl, tag, date, title, article }) => {
   return (
     <section className="w-full h-[450px] bg-white rounded-lg shadow-md p-2 overflow-hidden">
-      <Link to={`blog/article/${id}`} className="text-black">
+      <Link to={`/blog/article/${id}`} className="text-black">
         <div className="w-full overflow-hidden h-[200px] rounded">
           <Img
             src={imgUrl}

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const AsideNewsCard = ({ id, imgUrl, title, article, tag, date }) => {
   return (
     <Link
-      to={`blog/article/${id}`}
+      to={`/blog/article/${id}`}
       className="w-full h-44 p-1 rounded-lg flex justify-between items-start shadow-md overflow-hidden"
     >
       <div className="w-3/6 h-full rounded-s overflow-hidden">
