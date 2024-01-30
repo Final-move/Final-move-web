@@ -7,6 +7,7 @@ import Contact from "./contact/Page";
 import Search from "./search/Page";
 import Login from "./login/Login";
 import Signup from "./login/Signup";
+import ForgetPassword from "./login/ForgetPassword";
 
 export {
   Home,
@@ -18,4 +19,5 @@ export {
   Search,
   Login,
   Signup,
+  ForgetPassword,
 };

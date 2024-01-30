@@ -11,6 +11,7 @@ import {
   Search,
   Login,
   Signup,
+  ForgetPassword,
 } from "./pages";
 import { routeName } from "./data/constant";
 
@@ -45,7 +46,7 @@ const App = () => {
           <Route path={routeName.search} element={<Search />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
-          <Route path="/forgotpassword" element={<Signup />} />
+          <Route path="/forgotpassword" element={<ForgetPassword />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
 

@@ -5,13 +5,14 @@ import MapContainer from "./MapContainer";
 
 const Contact = () => {
   return (
-    <PageContainer className={"w-full min-h-screen bg-white"}>
+    <>
       <PageBanner title={"CONTACT US"} bgImg={"bg-contact-banner"} />
+      <PageContainer className={"w-full min-h-screen bg-white py-12"}>
+        <ContactSection />
 
-      <ContactSection />
-
-      <MapContainer className={"w-full h-[500px] py-12"} />
-    </PageContainer>
+        <MapContainer className={"w-full h-[500px] py-12"} />
+      </PageContainer>
+    </>
   );
 };
 

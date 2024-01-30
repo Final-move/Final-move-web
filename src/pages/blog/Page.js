@@ -4,11 +4,12 @@ import BlogNews from "./BlogNews";
 
 const Blog = () => {
   return (
-    <PageContainer className={"bg-white grid gap-4"}>
+    <>
       <PageBanner bgImg={"bg-blog-banner"} title={"BLOG"} />
-
-      <BlogNews />
-    </PageContainer>
+      <PageContainer className={"bg-white grid gap-4 py-12"}>
+        <BlogNews />
+      </PageContainer>
+    </>
   );
 };
 
