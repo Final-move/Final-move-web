@@ -38,3 +38,15 @@
     }
   }
 }
+
+@include u.breakpoint("595") {
+  .homeNews-section {
+    .home-main-news {
+      grid-template-columns: 1fr;
+    }
+
+    // .home-aside-news {
+    //   grid-column: 1 / 3;
+    // }
+  }
+}

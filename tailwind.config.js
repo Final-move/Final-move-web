@@ -15,8 +15,11 @@ module.exports = {
       },
 
       gridTemplateColumns: {
+        "home-col": "repeat(auto-fill, minmax(280px, 1fr))",
         "blog-col": "repeat(auto-fill, minmax(320px, 1fr))",
         "blog-col-2": "repeat(auto-fill, minmax(400px, 1fr))",
+        "aside-card": "2fr 4fr",
+        "home-news": "5fr 2fr",
       },
 
       colors: {

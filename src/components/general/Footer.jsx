@@ -79,9 +79,10 @@ const Footer = () => {
 
       <div className="ending-container">
         <p>
-          &copy; <span>{date > 2023 ? "2021 - " + date : date}.</span> All
-          rights reserved <br /> Developed by Sign Fireman Ministry
+          &copy; <span>{date > 2023 ? "2023 - " + date : date}.</span> All
+          rights reserved
         </p>
+        <p>Developed by Sign Fireman Ministry</p>
       </div>
     </footer>
   );

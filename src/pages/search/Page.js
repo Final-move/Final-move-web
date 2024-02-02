@@ -4,11 +4,12 @@ import { PageBanner, PageContainer } from "../../components";
 
 const Search = () => {
   return (
-    <PageContainer className={"w-full min-h-screen bg-white"}>
+    <>
       <PageBanner title={"SEARCH"} bgImg={"bg-search-banner"} />
-
-      <SearchContents />
-    </PageContainer>
+      <PageContainer className={"w-full min-h-screen bg-white"}>
+        <SearchContents />
+      </PageContainer>
+    </>
   );
 };
 
