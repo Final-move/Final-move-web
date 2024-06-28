@@ -48,6 +48,7 @@ const Img = ({ src, alt, className }) => {
           src={src}
           alt={alt}
           className={`${className ? className : ""}`}
+
         />
       ) : (
         <ImageLoader />
